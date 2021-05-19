@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Amount</label>
+    <input type="number" id="soTien">
+    <label>From Currency</label>
+    <select id="nhap">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <label>To Currency</label>
+    <select id="xuat">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <button onclick="chuyenDoi()">Chuyển đổi</button>
+    <p id="result"></p>
+    <script>
+        function chuyenDoi() {
+            let soTien = document.getElementById("soTien").value;
+            let nhap = document.getElementById("nhap").value;
+            let xuat = document.getElementById("xuat").value;
+            let result;
+            if (nhap == "VND" && xuat == "USD") {
+                result = "Result: " + (soTien / 23000) + "USD";
+            }
+            else if (nhap == "USD" && xuat == "VND"){
+                result = "Result: " + (soTien * 23000) + "VND";
+            }
+            else {
+                result = 'Bạn nhập sai loại tiền rồi'
+            }
+            document.writeln(result)
+        }
+    </script>
+</form>
+</body>
+</html>

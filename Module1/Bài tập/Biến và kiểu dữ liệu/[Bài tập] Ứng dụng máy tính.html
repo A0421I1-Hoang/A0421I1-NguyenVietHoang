@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" id="soThu1">
+    <input type="number" id="soThu2">
+    <button onclick="cong()">Cộng (+)</button>
+    <button onclick="tru()">Trừ (-)</button>
+    <button onclick="nhan()">Nhân (*)</button>
+    <button onclick="chia()">Chia (/)</button>
+    <p id="result"></p>
+    <script>
+        function cong() {
+            let soThu1 = document.getElementById("soThu1").value;
+            let soThu2 = document.getElementById("soThu2").value;
+            let result;
+            result = soThu1 + soThu2;
+            document.write(result)
+        }
+    </script>
+    <script>
+        function tru() {
+            let soThu1 = document.getElementById("soThu1").value;
+            let soThu2 = document.getElementById("soThu2").value;
+            let result;
+            result = soThu1 - soThu2;
+            document.write(result)
+        }
+    </script>
+    <script>
+        function nhan() {
+            let soThu1 = document.getElementById("soThu1").value;
+            let soThu2 = document.getElementById("soThu2").value;
+            let result;
+            result = soThu1 * soThu2;
+            document.write(result)
+        }
+    </script>
+    <script>
+        function chia() {
+            let soThu1 = document.getElementById("soThu1").value;
+            let soThu2 = document.getElementById("soThu2").value;
+            let result;
+            result = soThu1 / soThu2;
+            document.write(result)
+        }
+    </script>
+</form>
+</body>
+</html>
