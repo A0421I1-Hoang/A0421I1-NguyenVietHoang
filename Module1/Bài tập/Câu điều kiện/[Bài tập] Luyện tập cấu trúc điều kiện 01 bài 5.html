@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKiemTra = parseInt(prompt('Nhập vào điểm kiểm tra'))
+    if (diemKiemTra<100) {
+        if (diemKiemTra > 75) {
+            alert('Học lực giỏi')
+        } else if (diemKiemTra > 65) {
+            alert('Học lực khá')
+        } else if (diemKiemTra > 55) {
+            alert('Học lực trung bình')
+        } else if (diemKiemTra > 45) {
+            alert('Học lực yếu')
+        } else {
+            alert('Học lực kém')
+        }
+    } else {
+        alert('Bạn nhập sai rồi')
+    }
+</script>
+</body>
+</html>

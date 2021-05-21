@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+Nhập năm
+<input type="number" id="nam">
+Nhập tháng
+<input type="number" id="thang">
+    <button onclick="tinhSoNgay()">Tính số ngày</button>
+    <p id="soNgay"></p>
+</form>
+<script>
+    function tinhSoNgay() {
+        let nam1 = document.getElementById("nam").value;
+        let thang1 = document.getElementById("thang").value;
+        var result
+        namNhuan = nam1/4;
+        switch (thang1) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = 'Tháng này có 31 ngày';
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result = 'Tháng này có 30 ngày';
+                break;
+            case 2:
+                if (namNhuan == 0) {
+                    result = 'Tháng này có 29 ngày';
+                } else {
+                    result = 'Tháng này có 28 ngày';
+                }
+                break;
+        }
+        document.getElementById("soNgay").innerText = result;
+    }
+</script>
+</body>
+</html>

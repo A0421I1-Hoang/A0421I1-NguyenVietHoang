@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseInt(prompt('Nhập doanh số bán hàng (tỷ): '));
+    let hoaHong
+    if (doanhSo>100) {
+        hoaHong = doanhSo *15 /100
+        alert('Hoa hồng bạn nhận được là 15% là '+ hoaHong + 'triệu')
+    } else if (doanhSo>60){
+        hoaHong = doanhSo*12/100
+        alert('Hoa hồng bạn nhận được là 12% là '+ hoaHong + 'triệu')
+    } else if (doanhSo>30){
+        hoaHong = doanhSo*10/100
+        alert('Hoa hông bạn nhận được là 10% là '+ hoaHong + 'triệu')
+    } else {
+        hoaHong = doanhSo*7/100
+        alert('Hoa hồng bạn nhận được là 7% là '+ hoaHong + 'triệu')
+    }
+</script>
+</body>
+</html>

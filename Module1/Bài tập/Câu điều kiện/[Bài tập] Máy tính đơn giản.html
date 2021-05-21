@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="tinh" style="">
+    <table border="1">
+    <input name="result"> <br>
+    <input type="button" value="1" onclick="run1()">
+    <input type="button" value="2" onclick="run2()">
+    <input type="button" value="3" onclick="run3()">
+    <input type="button" value="+" onclick="cong()"><br>
+    <input type="button" value="4" onclick="run4()">
+    <input type="button" value="5" onclick="run5()">
+    <input type="button" value="6" onclick="run6()">
+    <input type="button" value="-" onclick="tru()"><br>
+    <input type="button" value="7" onclick="run7()">
+    <input type="button" value="8" onclick="run8()">
+    <input type="button" value="9" onclick="run9()">
+    <input type="button" value="*" onclick="nhan()"> <br>
+    <input type="button" value="C" onclick="runC()">
+    <input type="button" value="0" onclick="run0()">
+    <input type="button" value="/" onclick="chia()">
+    <input type="button" value="=" onclick="bang()">
+    <p id="ketQua"></p>
+    </table>
+</form>
+<p id="demo"></p>
+<script>
+    // function cal(ten) {
+    //    document.getElementById('cal()')
+    //  var result
+    //  let so1 = document.getElementById('soThu1').value;
+    //  let so2 = document.getElementById('soThu2').value;
+    //  switch (ten) {
+    //      case '+': result = so1 + so2; break;
+    //      case '-': result=so1-so2; break;
+    //      case '*': result=so1*so2; break;
+    //      case '/': if (so2!=0) {
+    //          result = so1 / so2
+    //      }
+    //  }
+    //  document.getElementById('demo').innerText = result
+    //}//
+    function run0() {
+        document.tinh.result.value += '0'
+    }
+    function run1() {
+        document.tinh.result.value += '1'
+    }
+    function run2() {
+        document.tinh.result.value += '2'
+    }
+    function run3() {
+        document.tinh.result.value += '3'
+    }
+    function run4() {
+        document.tinh.result.value += '4'
+    }
+    function run5() {
+        document.tinh.result.value += '5'
+    }
+    function run6() {
+        document.tinh.result.value += '6'
+    }
+    function run7() {
+        document.tinh.result.value += '7'
+    }
+    function run8() {
+        document.tinh.result.value += '8'
+    }
+    function run9() {
+        document.tinh.result.value += '9'
+    }
+    function cong() {
+        document.tinh.result.value +="+";
+    }
+    function tru() {
+        document.tinh.result.value +="-";
+    }
+    function nhan() {
+        document.tinh.result.value +="*";
+    }
+    function chia() {
+        document.tinh.result.value +="/";
+    }
+    function bang() {
+        var evalo = eval(document.tinh.result.value);
+        document.tinh.result.value += '=' + evalo;
+    }
+</script>
+</body>
+</html>

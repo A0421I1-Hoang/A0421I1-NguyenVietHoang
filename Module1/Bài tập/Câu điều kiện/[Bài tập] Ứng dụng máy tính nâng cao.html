@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="tinh">
+<input type="number" id="soThu1">
+<input type="number" id="soThu2"> <br>
+<input name="result"> <br>
+<input type="button" value="1" onclick="run('1')">
+<input type="button" value="2" onclick="run('2')">
+<input type="button" value="3" onclick="run('3')"> <br>
+<input type="button" value="4" onclick="run('4')">
+<input type="button" value="5" onclick="run('5')">
+<input type="button" value="6" onclick="run('6')"> <br>
+<input type="button" value="7" onclick="run('7')">
+<input type="button" value="8" onclick="run('8')">
+<input type="button" value="9" onclick="run('9')"> <br>
+<input type="button" value="+" onclick="plus()">
+<input type="button" onclick="cal('+')" value="+">
+<input type="button" onclick="cal('-')" value="-">
+<input type="button" onclick="cal('*')" value="*">
+<input type="button" onclick="cal('/')" value="/">
+</form>
+<p id="demo"></p>
+<script>
+    // function cal(ten) {
+    //    document.getElementById('cal()')
+    //  var result
+    //  let so1 = document.getElementById('soThu1').value;
+    //  let so2 = document.getElementById('soThu2').value;
+    //  switch (ten) {
+    //      case '+': result = so1 + so2; break;
+    //      case '-': result=so1-so2; break;
+    //      case '*': result=so1*so2; break;
+    //      case '/': if (so2!=0) {
+    //          result = so1 / so2
+    //      }
+    //  }
+    //  document.getElementById('demo').innerText = result
+    //}//
+    function run() {
+        var nhapSo
+        switch (so) {
+            case '1': nhapSo = 1; break;
+            case '2': nhapSo = 2; break;
+            case '3': nhapSo = 3; break;
+            case '4': nhapSo = 4; break;
+            case '5': nhapSo = 5; break;
+            case '6': nhapSo = 6; break;
+            case '7': nhapSo = 7; break;
+            case '8': nhapSo = 8; break;
+            case '9': nhapSo = 9; break;
+        }
+        document.tinh.result.value = nhapSo
+    }
+    function plus() {
+        document.tinh.result.value +="+";
+    }
+</script>
+</body>
+</html>

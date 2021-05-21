@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let userName = prompt("Bạn là ai", '');
+    if (userName == 'Admin') {
+        let pass = prompt('Password?', '');
+        if (pass == 'TheMaster') {
+            alert('Welcome!');
+        } else if (pass == null) {
+            alert('Canceled.');
+        } else {
+            alert('Wrong password');
+        }
+        alert("Chào mừng trở lại Admin")
+    } else if (userName == 'Member') {
+        alert('Chào mừng đến trang web');
+    } else {
+        alert("I don't know you");
+    }
+</script>
+</body>
+</html>
