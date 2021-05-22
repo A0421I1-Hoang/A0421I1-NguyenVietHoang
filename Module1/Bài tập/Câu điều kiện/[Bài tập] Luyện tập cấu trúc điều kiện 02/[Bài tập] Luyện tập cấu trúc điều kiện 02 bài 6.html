@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    Ta có phương trình bậc 1 là ax + b = C
+</p>
+<button onclick="tinh()">Tính nghiệm của phương trình</button>
+<script>
+    function tinh() {
+        let a = parseInt(prompt('Nhập sô a'));
+        let b = parseInt(prompt('Nhập sô b'));
+        let c = parseInt(prompt('Nhập số c'));
+        let x = (c-b)/a;
+        alert('Nghiệm của phương trình là '+ x);
+    }
+</script>
+</body>
+</html>

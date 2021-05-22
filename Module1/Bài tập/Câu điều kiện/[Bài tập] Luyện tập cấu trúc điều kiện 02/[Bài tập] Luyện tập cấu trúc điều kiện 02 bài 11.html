@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính thuế thu nhập cá nhân</h2>
+<button onclick="tinhThue()">Click để tính</button>
+<script>
+    function tinhThue() {
+        let thuNhap = parseInt(prompt('Nhập thu nhập hàng tháng của bạn (triệu VND): '));
+        let thue;
+        if (thuNhap>0){
+            if (thuNhap<60){
+                thue = thuNhap*5/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else if (thuNhap<120){
+                thue = thuNhap*10/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else if (thuNhap<216){
+                thue = thuNhap*15/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else if (thuNhap<384){
+                thue = thuNhap*20/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else if (thuNhap<624){
+                thue = thuNhap*25/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else if (thuNhap<960){
+                thue = thuNhap*30/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }else {
+                thue = thuNhap*35/100;
+                alert('Tiền thuế bạn phải nộp là '+ thue+' triệu VND')
+            }
+        }else {
+            alert('Bạn nhập sai rồi')
+        }
+    }
+</script>
+</body>
+</html>

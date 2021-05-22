@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính toán tiền điện</h2>
+<button onclick="tinhSoDien()">Click để tính</button>
+<script>
+    function tinhSoDien() {
+        let soDien = parseInt(prompt('Hãy nhập số diện đã dùng (kWh): '));
+        let cuoc;
+        if (soDien>0) {
+            if (soDien < 50) {
+                cuoc = soDien * 1678;
+                alert('Tiền điện của bạn là ' + cuoc+' VND')
+            } else if (soDien < 100) {
+                cuoc = soDien * 1734;
+                alert('Tiền điện của bạn là ' + cuoc+' VND')
+            } else if (soDien < 200) {
+                cuoc = soDien * 2014;
+                alert('Tiền điện của bạn là ' + cuoc+' VND')
+            } else if (soDien < 300) {
+                cuoc = soDien * 2536;
+                alert('Tiền điện của bạn là ' + cuoc+' VND')
+            }else if(soDien<400){
+                cuoc = soDien*2834;
+                alert('Tiền điện của bạn là '+ cuoc+' VND')
+            }else {
+                cuoc = soDien*2927;
+                alert('Tiền điện của bạn là '+ cuoc+' VND')
+            }
+        }else {
+            alert('Bạn nhập sai rồi')
+        }
+    }
+</script>
+</body>
+</html>
