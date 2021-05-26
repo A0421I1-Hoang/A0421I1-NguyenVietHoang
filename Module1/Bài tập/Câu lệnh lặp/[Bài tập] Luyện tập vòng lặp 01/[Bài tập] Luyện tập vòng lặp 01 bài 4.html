@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var f1 = 1, f2 = 1;
+        var count;
+        for (count =1;count<5;count++) {
+            let temp = f1 + f2;
+            f1 = f2;
+            f2 = temp;
+            if (f1%5==0){
+                document.writeln('Só fibonacci chia hết cho 5 đầu tiên là '+f1+'<br>');
+                document.writeln('Là số thứ '+count+ ' trong dãy số fibonacci');
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính lãi suất ngân hàng</h2>
+<button onclick="tinhLai()">Click me</button>
+<script>
+    function tinhLai() {
+        let soTien = parseInt(prompt('Nhập số tiền bạn cần gửi: '));
+        let thang = parseInt(prompt('Nhập số tháng bạn muốn gửi: '));
+        let result;
+        if (soTien > 0 && thang > 0) {
+            if (thang < 3) {
+                result = thang * soTien * 2.9 / 100;
+                alert('Số tiền bạn tiết kiện được là ' + result)
+            } else if (thang < 6) {
+                result = thang * soTien * 3.2 / 100;
+                alert('Số tiền bạn tiết kiện được là ' + result)
+            } else if (thang < 9) {
+                result = thang * soTien * 3.8 / 100;
+                alert('Số tiền bạn tiết kiện được là ' + result)
+            } else {
+                result = thang * soTien * 5.5 / 100;
+                alert('Số tiền bạn tiết kiện được là ' + result)
+            }
+        } else {
+            alert('Bạn nhập sai rồi')
+        }
+    }
+</script>
+</body>
+</html>

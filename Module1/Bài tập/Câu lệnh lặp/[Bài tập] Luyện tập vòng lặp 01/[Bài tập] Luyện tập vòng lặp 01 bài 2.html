@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let nhietDo = parseInt(prompt('Hãy nhập nhiệt độ: '));
+            if (nhietDo < 20) {
+                while (nhietDo<20) {
+                    parseInt(prompt('Hãy tăng nhiệt độ: '));
+                }
+            }else if (nhietDo>100){
+                while (nhietDo>100) {
+                    parseInt(prompt('Hãy giảm nhiệt độ: '));
+                }
+            }else {
+                document.writeln(nhietDo+' là nhiệt độ phù hợp');
+            }
+        alert(nhietDo+" là phù hợp");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

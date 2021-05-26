@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var f1 = 1, f2 = 1;
+        var count;
+        let n = parseInt(prompt('Nhập số lượng số trong dãy fibonacci bạn muốn hiển thị: '));
+        document.write('1 '+f1 + "<br/>");
+        for (count =1;count<=n;count++) {
+            document.write(count+' '+f2 + "<br/>");
+            let temp = f1 + f2;
+            f1 = f2;
+            f2 = temp;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

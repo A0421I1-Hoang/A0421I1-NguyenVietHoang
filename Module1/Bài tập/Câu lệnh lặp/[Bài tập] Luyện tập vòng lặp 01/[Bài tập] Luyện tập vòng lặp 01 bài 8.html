@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function play() {
+            let i=parseInt(prompt('Hãy nhập số muốn đoán trong khoản từ 1 đến 10: '));
+            let count;
+            let a=Math.floor(Math.random() * 10);
+                for (count=0;count<3;count++){
+                    if (i===a){
+                        document.writeln('Bạn đã đoán đúng rồi. Xin chúc mừng'+'<br>');
+                    }else if (i>a){
+                        i=parseInt(prompt('Lớn hơn số đã cho, bạn hãy đoán lại: '));
+                    }else {
+                        i=parseInt(prompt('Bé hơn số đã cho, bạn hãy đoán lại:  '))
+                    }
+                }
+        }
+    </script>
+</head>
+<body>
+<button onclick="play()">Click để chơi</button>
+</body>
+</html>
