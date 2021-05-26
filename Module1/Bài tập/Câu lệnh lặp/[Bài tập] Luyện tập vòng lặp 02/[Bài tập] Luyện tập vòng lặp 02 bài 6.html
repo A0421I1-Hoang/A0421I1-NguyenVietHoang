@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script style="alignment: center">
+        var a;
+        var b;
+        var size=parseInt(prompt('Hãy nhập size: '));
+        for (a = size/2; a <= size; a = a+2)
+        {
+            for (b = 1; b < size-a; b = b+2)
+                document.write("&ensp;");
+            for (b = 1; b <= a; b++)
+                document.write("*");
+            for (b = 1; b <= size-a; b++)
+                document.write("&ensp;");
+            for (b = 1; b <= a-1; b++)
+                document.write("*");
+            document.write('<br>');
+        }
+        for (a = size; a >= 0; a--)
+        {
+            for (b = a; b < size; b++)
+                document.write("&ensp;");
+            for (b = 1; b <= ((a * 2) - 1); b++)
+                document.write("*");
+            document.write('<br>')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

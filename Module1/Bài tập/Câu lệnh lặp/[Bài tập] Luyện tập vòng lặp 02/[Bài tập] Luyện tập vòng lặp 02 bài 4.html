@@ -5,18 +5,24 @@
     <title>Title</title>
     <script>
         let i;
-        for (i=1;i<19;i++){
-            document.write('_')
+        for (i=1;i<20;i++){
+            document.write('*')
         }
         document.write('<br>');
         let j;
         for (j=1;j<20;j++){
             if (j===1||j===19){
-                document.write('|')
+                document.write('*')
             } else {
-                document.write('_')
+                document.write('&ensp;')
             }
         }
+        document.write('<br>');
+        let t;
+        for (t=1;t<20;t++){
+            document.write('*')
+        }
+        document.write('<br>');
     </script>
 </head>
 <body>
