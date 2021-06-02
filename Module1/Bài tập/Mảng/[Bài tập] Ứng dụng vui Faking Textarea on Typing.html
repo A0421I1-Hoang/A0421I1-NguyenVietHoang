@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var vui = ["Bạn là một đứa ngốc !!!"];
+        var a=vui.toString();
+        var n="";
+        function typeTextarea(){
+            var t = document.f.txt.value;
+            var j = t.length;
+            if(j > 0)
+            {
+                for (var i=0;i <= j;i++){
+                    n=n+a[i];
+                    if (i==23){
+                        document.f.txt.value = n;
+                        n = "";
+                    }
+                }
+            }
+                document.f.txt.value = n;
+                n = "";
+            setTimeout("typeTextarea()", 40);
+        }
+    </script>
+</head>
+<body>
+<center>
+    <h2>Ghi bất kì điều gì vào đây</h2>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea()"></textarea>
+    </form>
+</center>
+</body>
+</html>

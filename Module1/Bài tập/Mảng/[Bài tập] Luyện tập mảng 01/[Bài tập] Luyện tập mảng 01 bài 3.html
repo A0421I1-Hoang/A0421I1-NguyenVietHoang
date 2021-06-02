@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a=[1,2,3,10,12,50,154,12,42,36];
+        let max=a[0];
+        let sum=0;
+        for (var i=0;i<=a.length;i++){
+            if (max<a[i]){
+                max = a[i];
+            }
+            sum += a[i];
+        }
+        let aver = sum/a.length;
+        document.writeln(max);
+        document.writeln(aver);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
