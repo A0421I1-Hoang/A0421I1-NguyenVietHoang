@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function reverseMang() {
+            let b=arr.reverse();
+            document.writeln("Mảng sau khi đảo ngược "+b)
+        }
+        let arr=[];
+        do {
+            var num=parseInt(prompt("Nhập vào số lượng phần tử: "))
+        }while (num<=0||isNaN(num));
+        for (let i=1;i<=num;i++){
+            arr[i]=prompt("Hãy nhập phần tử thứ "+i+" của mảng")
+        }
+        reverseMang(arr)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

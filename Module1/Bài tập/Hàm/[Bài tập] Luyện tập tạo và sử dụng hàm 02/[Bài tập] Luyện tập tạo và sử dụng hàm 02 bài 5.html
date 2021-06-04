@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function giaTriNhoNhat(a,b,c) {
+            if (a<b&&a<c){
+                document.writeln(a+" là số nhỏ nhất")
+            }else if (b<c){
+                document.writeln(b+" là số nhỏ nhất")
+            }else {
+                document.writeln(c+" là số nhỏ nhất")
+            }
+        }
+        let num1=parseInt(prompt("Hãy nhập vào số thứ nhất: "));
+        let num2=parseInt(prompt("Hãy nhập vào số thứ hai: "));
+        let num3=parseInt(prompt("Hãy nhập vào số thứ ba: "));
+        giaTriNhoNhat(num1,num2,num3);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

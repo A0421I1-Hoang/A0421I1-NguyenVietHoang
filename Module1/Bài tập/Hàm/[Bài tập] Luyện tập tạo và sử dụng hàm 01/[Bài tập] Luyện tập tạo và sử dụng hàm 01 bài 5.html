@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let arr1=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let arr2=["Usra Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        let a=prompt("Nhập vào tên ngôi sao: ");
+        function kiemTra(string) {
+            if (string===arr1) {
+                let b=arr1.indexOf(string);
+                alert("Ngôi sao bạn tìm nằm ở chòm sao "+arr2[b]);
+            }else {
+                alert("Not found")
+            }
+        }
+        kiemTra(a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

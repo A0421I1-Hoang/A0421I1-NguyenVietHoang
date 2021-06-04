@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let arr=[];
+        do {
+            var num=parseInt(prompt("Nhập vào số lượng phần tử: "))
+        }while (num<=0||isNaN(num));
+        for (let i=1;i<=num;i++){
+            arr[i]=prompt("Hãy nhập phần tử thứ "+i+" của mảng")
+        }
+        function kiemTra() {
+            let count=0;
+            let b=prompt("Nhập ký tự bạn cần kiểm tra: ");
+            for (var j=0;j<arr.length;j++){
+                if (arr[j]==b){
+                    count++;
+                }
+            }
+            document.writeln("Số lần ký tự đó xuất hiện trong mảng là: "+count)
+        }
+        kiemTra()
+    </script>
+</head>
+<body>
+
+</body>
+</html>
