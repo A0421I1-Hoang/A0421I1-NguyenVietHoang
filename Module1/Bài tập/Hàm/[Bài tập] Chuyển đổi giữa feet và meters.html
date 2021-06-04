@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function change() {
+            let a =document.getElementById("value").value;
+            let from = document.getElementById("from").value;
+            let to = document.getElementById("to").value;
+            let result;
+            if (from == "Feet" && to == "Meters") {
+                result = "Result: " + (a * 0.305) + " Meters";
+            } else if (from == "Meters" && to == "Feet") {
+                result = "Result: " + (a * 65.574/20) + " Feet";
+            } else {
+                result = " Bạn chọn sai đơn vị rồi";
+            }
+            document.getElementById("result").innerText = result;
+            document.writeln(result)
+        }
+    </script>
+</head>
+<body>
+<input id="value">
+<label>From</label>
+<select id="from">
+    <option>Feet</option>
+    <option>Meters</option>
+</select>
+<label>To</label>
+<select id="to">
+    <option>Meters</option>
+    <option>Feet</option>
+</select>
+<input type="button" onclick="change()" value="Change">
+<br>
+<p id="result"></p>
+</body>
+</html>

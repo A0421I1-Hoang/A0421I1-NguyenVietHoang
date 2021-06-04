@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a=[];
+        let num;
+        do {
+            num=parseInt(prompt('Hãy nhập số lượng phần tử của mảng: '));
+        }while (num<=0||isNaN(num));
+        for (i=0;i<=num;i++){
+            a[i]=prompt('Hãy nhập phần tử thứ '+ i);
+        }
+        let b=a.reverse();
+        document.writeln(b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
