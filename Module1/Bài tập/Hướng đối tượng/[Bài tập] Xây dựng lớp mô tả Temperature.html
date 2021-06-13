@@ -7,14 +7,16 @@
 <body>
 <p id="result"></p>
 <script>
-    let res = document.getElementById("result");
-    function Temperature(c){
-        this.tempC = c;
-        this.convertCtoF = function() {
-            res.innerHTML = `${c} độ C = ${(this.tempC*1.8)+32} độ F   `
-        };
-        this.convertCtoK = function() {
-            res.innerHTML += `${c} độ C = ${this.tempC + 273 } độ K`
+    //let res = document.getElementById("result");
+    class Temperature {
+        constructor(c) {
+            this.tempC = c;
+            this.convertCtoF = function () {
+                document.writeln(`${c} độ C = ${(this.tempC * 1.8) + 32} độ F`+"<br>")
+            };
+            this.convertCtoK = function () {
+                document.writeln(`${c} độ C = ${this.tempC + 273} độ K`)
+            }
         }
     }
     let temp = new Temperature(25);
