@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = prompt('Nhập vào chuỗi bất kì: ');
+        var UPPER = '-';
+        var LOWER = '_';
+        var result = [];
+
+        for(var x=0; x<str.length; x++)
+        {
+            if(UPPER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[x]) !== -1)
+            {
+                result.push(str[x].toUpperCase());
+            }
+            else
+            {
+                result.push(str[x]);
+            }
+        }
+        document.writeln(result.join(''));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
