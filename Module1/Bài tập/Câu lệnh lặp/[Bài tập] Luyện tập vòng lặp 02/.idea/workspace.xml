@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d65b1a5e-5b0d-4a4d-b660-37eebd4fbbdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Hướng đối tượng/[Bài tập] Game đơn giản - di chuyển đối tượng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Hướng đối tượng/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Thực hành/Hướng đối tượng/[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hướng đối tượng/[Bài tập] Xây dựng lớp mô tả Temperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Hướng đối tượng/[Bài tập] Xây dựng lớp mô tả Temperature.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1twMtBzIPCKEssL22ShG8KuiM2M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d65b1a5e-5b0d-4a4d-b660-37eebd4fbbdb" name="Default Changelist" comment="" />
+      <created>1623675910553</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623675910553</updated>
+      <workItem from="1623675911743" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1071" y="264" key="FileChooserDialogImpl" timestamp="1623675923674">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1071" y="264" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1623675923674" />
+  </component>
+</project>
