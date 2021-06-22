@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var h=5;
+    for (let i = 1; i <= h; i++)
+    {
+        for (let j = 1; j <= i; j++)
+        {
+            if (j == 1 || j == i || i == h)
+                document.writeln("*");
+            else
+                document.writeln("&ensp;");
+        }
+        document.writeln("</br>");
+    }
+</script>
+</body>
+</html>
