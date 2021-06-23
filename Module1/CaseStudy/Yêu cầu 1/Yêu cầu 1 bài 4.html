@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var h=9;
+    var a=h;
+    var b=h;
+    for (let i=0;i<h;i++) {
+        for (let j = 0; j < 2*h-1; j++) {
+            if (j==a || j==b || i==h-1) {
+                document.writeln("*");
+            }else {
+                document.writeln("&ensp;")
+            }
+        }
+        a--;
+        b++;
+        document.writeln("<br>")
+    }
+</script>
+</body>
+</html>

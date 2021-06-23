@@ -6,13 +6,12 @@
 </head>
 <body>
 <script>
-    var n=4;
-    for (let i=0;i<n;i++){
-        if (i===0||i===n-1){
-            document.writeln("*****"+"</br>");
-        }else {
-            document.writeln("*"+"&ensp;"+"&ensp;"+"&ensp;"+"*"+"</br>");
+    var n=parseInt(prompt("Nhập chiều cao hình tam giác: "));
+    for (let i=0;i<n+2;i++){
+        for (let j=0;j<i-1;j++){
+            document.writeln("*")
         }
+        document.writeln("<br>")
     }
 </script>
 </body>

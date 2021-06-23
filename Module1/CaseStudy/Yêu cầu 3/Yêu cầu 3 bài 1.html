@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1=[];
+    let arr2=[];
+    let num;
+    let sum=0;
+    do {
+        num=parseInt(prompt("Hãy nhập số lượng của mảng: "));
+    }while (num<0||isNaN(num));
+    for (let i=0;i<num;i++){
+        arr1[i]=parseInt(prompt("Hãy nhập số nguyên dương vào mảng: "))
+    }
+    for (let j=0;j<num;j++){
+        sum+=arr1[j];
+        arr2[j]=sum;
+    }
+    console.log(arr2);
+</script>
+</body>
+</html>

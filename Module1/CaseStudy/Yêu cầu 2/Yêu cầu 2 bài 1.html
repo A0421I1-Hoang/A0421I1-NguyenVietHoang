@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var luong=parseInt(prompt("Nhập lương của nhân viên (Triệu): "));
+    var thue;
+    if(luong>=15){
+        thue=20*luong/100;
+        luong=luong-thue;
+        alert("Thuế thu nhập của bạn là "+thue+" triệu."+
+            " Lương bạn nhận được là "+luong+" triệu");
+    }else if (luong>=7){
+        thue=10*luong/100;
+        luong=luong-thue;
+        alert("Thuế thu nhập của bạn là "+thue+" triệu."+
+            " Lương bạn nhận được là "+luong+" triệu");
+    }else {
+        thue=5*luong/100;
+        luong=luong-thue;
+        alert("Thuế thu nhập của bạn là "+thue+" triệu."+
+            " Lương bạn nhận được là "+luong+" triệu");
+    }
+</script>
+</body>
+</html>

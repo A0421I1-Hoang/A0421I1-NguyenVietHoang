@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var lower = 'abcdefghijklmnopqrstuvwxyz';
+    var result=[];
+    var str=prompt("Nhập chuỗi bất kỳ: ");
+    for (let i=0;i<str.length;i++){
+        if (upper.indexOf(str[i])!==-1)
+        {
+            result.push(str[i].toLowerCase());
+        }else if (lower.indexOf(str[i])!==-1){
+            result.push(str[i].toUpperCase());
+        } else {
+            result.push(str[i]);
+        }
+    }
+    console.log(result.join(' '))
+</script>
+</body>
+</html>

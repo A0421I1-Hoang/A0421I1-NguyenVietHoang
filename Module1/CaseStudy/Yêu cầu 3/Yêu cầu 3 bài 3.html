@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators=[5,2,5];
+    let denominators = [6, 3, 4];
+    let maxFraction=0;
+    let a=0;
+    for (let i=0;i<numerators.length;i++){
+        if (maxFraction<numerators[i]/denominators[i]) {
+            maxFraction = numerators[i]/denominators[i];
+            a=i;
+        }
+    }
+    console.log("Phân số lớn nhất là "+maxFraction+" có chỉ số là "+a);
+</script>
+</body>
+</html>
