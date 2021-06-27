@@ -16,17 +16,18 @@
             document.writeln("<tr>");
             document.write("<td>" + (i+1)+" "+menu[i] + "</td>");
             document.write("<td>" +cost[i] + "</td>");
-            document.writeln("<td> <button onclick='Order(" + i + ")'>Order</button></td>");
+            document.writeln("<td> <input id='order'></td>");
             document.writeln("</tr>")
         }
         document.writeln("</table>")
     }
-    function Order(i){
-        a=prompt("Hãy nhập số lượng bạn muốn đặt: ");
-        b=a*cost[i];
-        alert(b);
+    function Order(){
+        cost=document.getElementById("order").value;
+        b=a*cost;
+        document.writeln("Tổng số tiền bạn cần phải thanh toán là "+b);
     }
     displayProduct()
 </script>
+<button onclick="Order">order</button>
 </body>
 </html>

@@ -5,17 +5,19 @@
     <title>Title</title>
     <script>
         function isPrime(n) {
-            for (var i = 2; i < Math.sqrt(n); i++) {
+            for (var i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i === 0) {
-                    document.write(n + " là số nguyên tố"+ "<br/>");
+                    document.write(n + " không phải là số nguyên tố"+ "<br/>");
+                    break;
                 } else {
-                    document.write(n + " không phải là số nguyên tố"+" <br/>");
+                    document.write(n + " là số nguyên tố"+" <br/>");
+                    break;
                 }
             }
         }
         do {
             var a = parseInt(prompt('Hãy nhập vào số cần kiểm tra: '));
-        } while (a <= 2 || isNaN(a));
+        } while (a <= 1 || isNaN(a));
         isPrime(a);
     </script>
 </head>
