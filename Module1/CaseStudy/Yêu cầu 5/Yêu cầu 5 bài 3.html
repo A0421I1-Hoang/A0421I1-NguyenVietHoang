@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("Hãy nhập n: "));
+    let m=parseInt(prompt("Hãy nhập m: "));
+    var array=new Array(n);
+    let max=0;
+    let min =1000000000000;
+    for (let i=0;i<array.length;i++){
+        array[i]=new Array(m);
+        for (let j=0;j<array[i].length;j++){
+            array[i][j]=parseInt(prompt("Nhap phan tu array[" + i + "][" + j + "];"))
+        }
+    }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < Math.sqrt(array[i][j]); j++) {
+            if (max<array[i][j]){
+                max=array[i][j];
+            }
+        }
+    }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < Math.sqrt(array[i][j]); j++) {
+            if (min>array[i][j]){
+                min=array[i][j];
+            }
+        }
+    }
+    console.log("Giá trị lớn nhất là "+max);
+    console.log("Giá trị nhỏ nhất là "+min);
+</script>
+</body>
+</html>

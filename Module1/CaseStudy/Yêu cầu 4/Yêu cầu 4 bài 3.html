@@ -8,6 +8,16 @@
 <script>
     let s1="aabcc";
     let s2="adcaa";
+    s1 = s1.split('');
+    s2 = s2.split('');
+    let count=0;
+    s1.forEach(e => {
+        if (s2.includes(e)) {
+            count++;
+            s2.splice(s2.indexOf(e), 1);
+        }
+    });
+    document.writeln(count);
 </script>
 </body>
 </html>
