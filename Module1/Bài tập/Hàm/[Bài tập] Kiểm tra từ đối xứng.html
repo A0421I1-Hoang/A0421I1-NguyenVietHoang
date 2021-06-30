@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome() {
+        let t;
+        palindrome=palindrome.toLowerCase();
+        for (let i=1;i<palindrome.length/2;i++){
+            if (palindrome[i]!=palindrome[palindrome.length-i-1]){
+                t=-1;
+                break;
+            } else {
+                t=0;
+                break;
+            }
+        }
+        if (t===0){
+            console.log("Đây là chuỗi đối xứng");
+        } else {
+            console.log("Chuỗi này không đối xứng")
+        }
+    }
+    let palindrome=prompt("Hãy nhập chuỗi vào: ");
+    isPalindrome();
+</script>
+</body>
+</html>
