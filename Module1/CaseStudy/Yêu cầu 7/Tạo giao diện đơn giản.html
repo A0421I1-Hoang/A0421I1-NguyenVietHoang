@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            height: 863px;
+            position: absolute;
+            left: 15%;
+            margin-left: -3px;
+        }
+        .vl2 {
+             border-bottom: 3px solid black;
+             left: 20%;
+             margin-left: -3px;
+         }
+        * {
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            float: left;
+            width: 15%;
+            padding: 0px;
+        }
+        .box2 {
+            float: left;
+            width: 85%;
+            padding: 0px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
-<header>
-<img src="download.png" width="100">
-<h1 align="middle">Hệ thống quản lý casestudy module 1</h1>
-</header>
+<div class="clearfix">
+    <div class="box1" style="background-color:white">
+        <img src="download.png" width="100">
+    </div>
+    <div class="box2" style="background-color:white">
+        <h1 align="middle">Hệ thống quản lý casestudy module 1</h1>
+    </div>
+</div>
+    <div class="vl2"></div>
+    <div class="vl"></div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Bài tập 1</li>
+                <li>Bài tập 2</li>
+                <li>Bài tập 3</li>
+                <li>Bài tập 4</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
