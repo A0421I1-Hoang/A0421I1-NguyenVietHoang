@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class TV{
+        constructor(name,status) {
+            this.name=name;
+            this.status = status;
+            this.status=false;
+        }
+        turnOn=function () {
+            if (this.status) {
+                alert("TV đang bật")
+            } else {
+                alert("TV đã được bật!");
+                this.status =true;
+            }
+        };
+        turnOff = function () {
+            if (this.status) {
+                alert("TV đã được tắt!");
+                this.status =false
+            } else {
+                alert("TV đang bật rồi mà")
+                }
+            };
+    }
+    class Remote{
+        constructor(channel,volume) {
+            this.channel=channel;
+            this.volume=volume;
+            this.conectStatus = false;
+            this.conectToTV = function (obj) {
+                this.TV = obj;
+                this.status = true;
+            };
+            this.getStatus = function () {
+                if (this.status) {
+                    console.log(this.TV.name);
+                    console.log(this.TV.status);
+                }
+            };
+            this.turnOff = function () {
+                if (this.status) {
+                    this.TV.turnOff();
+                    this.getStatus();
+                }
+            };
+            this.turnOn = function () {
+                if (this.status) {
+                    this.TV.turnOn();
+                    this.getStatus();
+                }
+            };
+            this.changeChannel=function () {
+                let a=parseInt(prompt("Hãy nhập kênh bạn muốn chuyển: "));
+                channelList.indexOf(a);
+                alert("Đã chuyển qua kênh "+a);
+            };
+            this.turnUpVolume=function (){
+                let b=parseInt(prompt("Hãy nhập âm lượng bạn muốn tăng: "));
+                alert("Đã tăng "+b+" đơn vị");
+            };
+            this.urnDownVolume=function(){
+                let c=parseInt(prompt("Hãy nhập âm lượng bạn muốn giảm: "));
+                alert("Đã giảm "+c+"đơn vị");
+            }
+        }
+    }
+    let channelList = [1,2,3,4,5,6,7,8,9];
+    let tv=new TV("Samsung");
+    let remote=new Remote();
+    tv.turnOn();
+    remote.conectToTV();
+    remote.changeChannel();
+    remote.changeChannel();
+    remote.turnUpVolume();
+    tv.turnOff()
+</script>
+</body>
+</html>
