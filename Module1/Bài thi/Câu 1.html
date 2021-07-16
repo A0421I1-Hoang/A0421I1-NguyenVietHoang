@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let num;
+    do {
+        num = parseInt(prompt("Hãy nhập số phần tử của mảng: "));
+    } while (num<=0||isNaN(num));
+    for (let i=0;i<num;i++){
+        arr[i]=parseInt(prompt("Hãy nhập phần tử thứ "+(i+1)+":"));
+    }
+    let a=arr.sort(function (a,b) {
+        return a-b;
+    });
+    console.log(a);
+</script>
+</body>
+</html>

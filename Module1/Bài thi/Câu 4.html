@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class HocSinh{
+        constructor(stt,ten,ngaySinh,diemTrungBinh) {
+            this.stt=stt;
+            this.ten=ten;
+            this.ngaySinh=ngaySinh;
+            this.diemTrungBinh=diemTrungBinh;
+        }
+        getStt(){
+            return this.stt;
+        }
+        getTen(){
+            return this.ten;
+        }
+        getNgaySinh(){
+            return this.ngaySinh;
+        }
+        getDiemTrungBinh(){
+            return this.diemTrungBinh;
+        }
+        thongTin(){
+            console.log("Thông tin của học sinh đó là số thứ tự "+this.getStt());
+            console.log("Họ và tên "+this.getTen());
+            console.log("Ngày tháng năm sinh "+this.getNgaySinh());
+            console.log("Điểm trung bình "+this.getDiemTrungBinh());
+        }
+        hocLuc(){
+            if(this.diemTrungBinh>8){
+                console.log("Học sinh giỏi");
+            }else if (this.diemTrungBinh>=6.5){
+                console.log("Học sinh khá");
+            }else if (this.diemTrungBinh>=5){
+                console.log("Học sinh trung bình");
+            }else if (this.diemTrungBinh>=3.5){
+                console.log("Học sinh yếu");
+            }else {
+                console.log("Học sinh kém");
+            }
+        }
+    }
+    let hocSinh= new HocSinh(1,"Nguyễn Văn A","1-1-1999",8.5);
+    hocSinh.thongTin();
+    hocSinh.hocLuc();
+</script>
+</body>
+</html>

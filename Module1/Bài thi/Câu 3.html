@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxScore() {
+        let max=score[0];
+        let index=0;
+        for (let j=0;j<num;j++){
+            if (max<=score[j]){
+                max=score[j];
+                index=j;
+            }
+        }
+        console.log("Điểm cao nhất là "+max+" ở vị trí "+index);
+    }
+    let score=[];
+    let num;
+    do {
+        num = parseInt(prompt("Hãy nhập số điểm của mảng: "));
+    } while (num<=0||isNaN(num));
+    for (let i=0;i<num;i++){
+        score[i]=parseInt(prompt("Hãy nhập điểm thứ "+(i+1)+":"));
+    }
+    findMaxScore();
+</script>
+</body>
+</html>

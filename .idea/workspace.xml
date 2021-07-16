@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d259d5f3-1138-490e-a66b-5ab3aad8ac09" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vDbQOs0Sn2Fjmw2g8b7R5yiv59" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.timGiaTriNhoNhat (1)">
+    <configuration name="themPhanTu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.themPhanTu" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="timGiaTriLonNhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.mangVaPhuongThuc.timGiaTriLonNhat" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuc_hanh.mangVaPhuongThuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="timGiaTriNhoNhat (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.timGiaTriNhoNhat" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="timGiaTriNhoNhat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.mangVaPhuongThuc.timGiaTriNhoNhat" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thuc_hanh.mangVaPhuongThuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xoaPhanTu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.xoaPhanTu" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.timGiaTriNhoNhat (1)" />
+        <item itemvalue="Application.themPhanTu" />
+        <item itemvalue="Application.xoaPhanTu" />
+        <item itemvalue="Application.timGiaTriNhoNhat" />
+        <item itemvalue="Application.timGiaTriLonNhat" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d259d5f3-1138-490e-a66b-5ab3aad8ac09" name="Default Changelist" comment="" />
+      <created>1626099589271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626099589271</updated>
+      <workItem from="1626099591629" duration="111000" />
+      <workItem from="1626099723891" duration="471000" />
+      <workItem from="1626246852843" duration="657000" />
+      <workItem from="1626258321411" duration="4038000" />
+      <workItem from="1626424286989" duration="8478000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="590" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1626099729208">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="590" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1626099729208" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1626258338690">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1626258338690" />
+    <state width="1106" height="266" key="GridCell.Tab.0.bottom" timestamp="1626436824840">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1106" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1626436824840" />
+    <state width="1106" height="266" key="GridCell.Tab.0.center" timestamp="1626436824840">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1106" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1626436824840" />
+    <state width="1106" height="266" key="GridCell.Tab.0.left" timestamp="1626436824840">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1106" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1626436824840" />
+    <state width="1106" height="266" key="GridCell.Tab.0.right" timestamp="1626436824840">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1106" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1626436824840" />
+    <state x="393" y="269" key="IDE.errors.dialog" timestamp="1626434812395">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="393" y="269" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1626434812395" />
+    <state x="440" y="99" key="SettingsEditor" timestamp="1626099836544">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1626099836544" />
+    <state x="344" y="195" key="new project wizard" timestamp="1626246906779">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="344" y="195" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1626246906779" />
+  </component>
+</project>
