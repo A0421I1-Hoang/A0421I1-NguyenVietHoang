@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d259d5f3-1138-490e-a66b-5ab3aad8ac09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module2/src/bai_tap/mangVaPhuongThuc/gopMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/bai_tap/mangVaPhuongThuc/timGiaTriLonNhatTrongMangHaiChieu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/bai_tap/mangVaPhuongThuc/tinhTongCacSoOMotHangXacDinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/bai_tap/mangVaPhuongThuc/tinhTongDuongCheoTrongMaTranVuong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/thuc_hanh/mangVaPhuongThuc/demSoSinhVienDo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +34,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.tinhTongDuongCheoTrongMaTranVuong">
-    <configuration name="gopMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.gopMang" />
+  <component name="RunManager" selected="Application.Main (5)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.lopVaDoiTuongTrongJava.QuadraticEquation.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="PATTERN" value="bai_tap.lopVaDoiTuongTrongJava.QuadraticEquation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -53,12 +48,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timGiaTriLonNhatTrongMangHaiChieu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.timGiaTriLonNhatTrongMangHaiChieu" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.lopVaDoiTuongTrongJava.Fan.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="PATTERN" value="bai_tap.lopVaDoiTuongTrongJava.Fan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timGiaTriNhoNhat (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.timGiaTriNhoNhat" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thuc_hanh.accessModifier.StaticProperty.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="PATTERN" value="thuc_hanh.accessModifier.StaticProperty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tinhTongCacSoOMotHangXacDinh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.tinhTongCacSoOMotHangXacDinh" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.accessModifier.accessModifier.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="PATTERN" value="bai_tap.accessModifier.accessModifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tinhTongDuongCheoTrongMaTranVuong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap.mangVaPhuongThuc.tinhTongDuongCheoTrongMaTranVuong" />
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap.accessModifier.Student.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap.mangVaPhuongThuc.*" />
+          <option name="PATTERN" value="bai_tap.accessModifier.Student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.tinhTongDuongCheoTrongMaTranVuong" />
-        <item itemvalue="Application.tinhTongCacSoOMotHangXacDinh" />
-        <item itemvalue="Application.timGiaTriLonNhatTrongMangHaiChieu" />
-        <item itemvalue="Application.gopMang" />
-        <item itemvalue="Application.timGiaTriNhoNhat (1)" />
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +127,9 @@
       <workItem from="1626424286989" duration="9719000" />
       <workItem from="1626525735145" duration="77000" />
       <workItem from="1627097194329" duration="3546000" />
+      <workItem from="1627296913431" duration="328000" />
+      <workItem from="1627613159866" duration="5369000" />
+      <workItem from="1627645485012" duration="2302000" />
     </task>
     <servers />
   </component>
@@ -139,6 +137,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="870" y="267" key="#com.intellij.ide.util.MemberChooser" timestamp="1627645824256">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="870" y="267" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1627645824256" />
     <state x="590" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1626099729208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -147,22 +149,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1626258338690" />
-    <state width="1106" height="266" key="GridCell.Tab.0.bottom" timestamp="1627102756110">
+    <state width="1106" height="285" key="GridCell.Tab.0.bottom" timestamp="1627655253995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1106" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1627102756110" />
-    <state width="1106" height="266" key="GridCell.Tab.0.center" timestamp="1627102756110">
+    <state width="1106" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1627655253995" />
+    <state width="1106" height="285" key="GridCell.Tab.0.center" timestamp="1627655253994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1106" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1627102756110" />
-    <state width="1106" height="266" key="GridCell.Tab.0.left" timestamp="1627102756102">
+    <state width="1106" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1627655253994" />
+    <state width="1106" height="285" key="GridCell.Tab.0.left" timestamp="1627655253994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1106" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1627102756102" />
-    <state width="1106" height="266" key="GridCell.Tab.0.right" timestamp="1627102756110">
+    <state width="1106" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1627655253994" />
+    <state width="1106" height="285" key="GridCell.Tab.0.right" timestamp="1627655253995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1106" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1627102756110" />
+    <state width="1106" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1627655253995" />
     <state x="393" y="269" key="IDE.errors.dialog" timestamp="1626434812395">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
