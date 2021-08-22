@@ -1,6 +1,6 @@
-package keThua.heCacDoiTuongHinhHoc;
+package AbstractClassAndInterface.Colorable;
 
-public class Circle extends thuc_hanh.keThua.heCacDoiTuongHinhHoc.Shape {
+public class Circle extends Shape {
     private double radius = 1.0;
 
     public Circle() {
@@ -11,7 +11,7 @@ public class Circle extends thuc_hanh.keThua.heCacDoiTuongHinhHoc.Shape {
     }
 
     public Circle(double radius, String color, boolean filled) {
-        super(color,filled);
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -36,6 +36,13 @@ public class Circle extends thuc_hanh.keThua.heCacDoiTuongHinhHoc.Shape {
         return "A Circle with radius="
                 + getRadius()
                 + ", which is a subclass of "
-                + super.toString();
+                + super.toString()
+                + ", Area=" +
+                + getArea();
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Hình tròn: tô hết vòng tròn");
     }
 }
