@@ -9,7 +9,5 @@ public class Main {
         personList.add(new Person());
         personList.add(new Person());
 
-        MyList<Person> list2 = personList.clone();
-
     }
 }
