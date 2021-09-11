@@ -1,4 +1,4 @@
-package thuc_hanh.keThua.heCacDoiTuongHinhHoc;
+package keThua.heCacDoiTuongHinhHoc;
 
 public class Main {
     public static void main(String[] args) {

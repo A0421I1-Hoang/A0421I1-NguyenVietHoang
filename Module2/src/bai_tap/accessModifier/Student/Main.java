@@ -1,4 +1,4 @@
-package bai_tap.accessModifier.Student;
+package accessModifier.Student;
 
 public class Main {
     public static void main(String[] args) {

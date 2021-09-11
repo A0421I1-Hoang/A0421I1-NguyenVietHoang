@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/CaseStudy/CaseStudy.iml" filepath="$PROJECT_DIR$/src/CaseStudy/CaseStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Module2.iml" filepath="$PROJECT_DIR$/src/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module21.iml" filepath="$PROJECT_DIR$/Module21.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/bai_tap/bai_tap.iml" filepath="$PROJECT_DIR$/src/bai_tap/bai_tap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/src1.iml" filepath="$PROJECT_DIR$/src/src1.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/thuc_hanh/thuc_hanh.iml" filepath="$PROJECT_DIR$/src/thuc_hanh/thuc_hanh.iml" />
     </modules>
   </component>
