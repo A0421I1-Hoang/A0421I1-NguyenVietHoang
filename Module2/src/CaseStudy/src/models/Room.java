@@ -9,8 +9,8 @@ public class Room extends Facility {
 
     private Room(String free){this.free=free;}
 
-    public Room(String free, String name, double area, double price){
-        super(name, area, price);
+    public Room(String name, double area, double price, int peopleMax,String styleRental, String free){
+        super(name, area, price, peopleMax, styleRental);
         this.free=free;
     }
 
@@ -24,6 +24,6 @@ public class Room extends Facility {
 
     @Override
     public String toString() {
-        return "Room{"+"free='" + free + '\'' +super.toString()+ '}';
+        return "Room{"+super.toString()+", free='" + free + '\'' + '}';
     }
 }
