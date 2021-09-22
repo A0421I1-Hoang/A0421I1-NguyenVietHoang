@@ -32,7 +32,7 @@ public class Main {
         List<String> result= new ArrayList<>();
         if (csvLine != null){
             String[] splitData = csvLine.split(",");
-            for (int i=0; i<splitData.length ; i++){
+            for (int i=1; i<splitData.length ; i++){
                 result.add(splitData[i]);
             }
         }

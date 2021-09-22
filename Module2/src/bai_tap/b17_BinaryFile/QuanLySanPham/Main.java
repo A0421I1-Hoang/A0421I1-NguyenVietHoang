@@ -1,8 +1,6 @@
 package b17_BinaryFile.QuanLySanPham;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 

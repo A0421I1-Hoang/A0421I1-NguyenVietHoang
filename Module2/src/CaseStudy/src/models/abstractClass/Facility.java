@@ -1,6 +1,6 @@
 package models.abstractClass;
 
-public abstract class Facility {
+public class Facility {
     public String name;
     public double area;
     public double price;
