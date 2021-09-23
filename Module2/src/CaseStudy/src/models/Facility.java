@@ -1,6 +1,7 @@
-package models.abstractClass;
+package models;
 
 public class Facility {
+    public int id;
     public String name;
     public double area;
     public double price;
@@ -9,7 +10,8 @@ public class Facility {
 
     public Facility(){}
 
-    public Facility(String name, double area, double price, int peopleMax, String styleRental) {
+    public Facility(int id, String name, double area, double price, int peopleMax, String styleRental) {
+        this.id=id;
         this.name=name;
         this.area = area;
         this.price = price;
@@ -17,9 +19,11 @@ public class Facility {
         this.styleRental=styleRental;
     }
 
+
     @Override
     public String toString() {
         return "name='" + name + '\'' +
+                ", id="+ id +
                 ", area=" + area +
                 ", price=" + price +
                 ", people max="+ peopleMax+

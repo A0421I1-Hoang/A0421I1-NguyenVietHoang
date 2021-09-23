@@ -1,7 +1,5 @@
 package models;
 
-import models.abstractClass.Facility;
-
 public class Room extends Facility {
     private String free;
 
@@ -9,8 +7,8 @@ public class Room extends Facility {
 
     private Room(String free){this.free=free;}
 
-    public Room(String name, double area, double price, int peopleMax,String styleRental, String free){
-        super(name, area, price, peopleMax, styleRental);
+    public Room(int id,String name, double area, double price, int peopleMax,String styleRental, String free){
+        super(id,name, area, price, peopleMax, styleRental);
         this.free=free;
     }
 

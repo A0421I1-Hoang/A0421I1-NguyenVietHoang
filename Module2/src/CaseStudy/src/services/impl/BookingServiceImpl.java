@@ -3,9 +3,10 @@ package services.impl;
 import models.Booking;
 import models.Customer;
 import models.Villa;
-import models.abstractClass.Facility;
+import models.Facility;
 import services.BookingService;
 import utils.BookingComparator;
+import utils.ReadAndWrite;
 
 import java.util.*;
 
@@ -30,12 +31,19 @@ public class BookingServiceImpl implements BookingService {
                 "0123456999","2010115464",
                 "aaiwudvf1es@gmail.com","nu",
                 "Vip","139 Dien Bien Phu"));
-        facilityIntegerMap.put(new Villa("Villa 1",200,2000,8,"Day",2,20,"Vip"),0);
-        facilityIntegerMap.put(new Villa("Villa 2",250,2200,10,"Day",2,25,"Vip"),1);
+        facilityIntegerMap.put(new Villa(1,"Villa 1",200,2000,8,"Day",2,20,"Vip"),0);
+        facilityIntegerMap.put(new Villa(2,"Villa 2",250,2200,10,"Day",2,25,"Vip"),0);
+    }
+
+    public Set<Booking> sendBooking(){
+        return bookingsSet;
     }
     @Override
     public void display() {
-
+        bookingsSet= (Set<Booking>) ReadAndWrite.read("D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\booking.csv");
+        for (Booking booking:bookingsSet) {
+            System.out.println(booking.toString());
+        }
     }
 
     @Override
@@ -44,6 +52,17 @@ public class BookingServiceImpl implements BookingService {
         if (!bookingsSet.isEmpty()){
             id=bookingsSet.size();
         }
+        Scanner scanner= new Scanner(System.in);
+        Customer customer=choseCustomer();
+        Facility facility=choseFacility();
+        System.out.println("Nhập ngày bắt đầu thuê");
+        String startDate =scanner.nextLine();
+        System.out.println("Nhập ngày kết thúc thuê");
+        String endDate=scanner.nextLine();
+        Booking booking=new Booking(id,startDate,endDate,customer,facility);
+        bookingsSet.add(booking);
+        ReadAndWrite.write(bookingsSet,"D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\booking.csv");
+        System.out.println("Đã tạo mới thành công");
     }
 
     @Override

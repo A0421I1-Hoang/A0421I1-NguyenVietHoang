@@ -1,7 +1,5 @@
 package models;
 
-import models.abstractClass.Facility;
-
 public class House extends Facility {
     private int floor;
     private String roomStandard;
@@ -10,14 +8,15 @@ public class House extends Facility {
 
     public House(int floor, String roomStandard){this.floor=floor; this.roomStandard=roomStandard;}
 
-    public House(String name,
+    public House(int id,
+                 String name,
                  double area,
                  double price,
                  int peopleMax,
                  String styleRental,
                  int floor,
                  String roomStandard){
-        super(name, area, price, peopleMax, styleRental);
+        super(id,name, area, price, peopleMax, styleRental);
         this.floor=floor;
         this.roomStandard=roomStandard;
     }

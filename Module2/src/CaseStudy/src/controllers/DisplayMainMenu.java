@@ -1,15 +1,13 @@
 package controllers;
 
-import services.impl.CustomerServiceImpl;
-import services.impl.EmployeeServiceImpl;
-import services.impl.FacilityServiceImpl;
+import services.impl.*;
 
 import java.util.Scanner;
 
 public class DisplayMainMenu {
-
+    public static void main(String[] args) {displayMainMenu();}
     public static void displayMainMenu(){
-        int number;
+        int number=0;
         boolean check =true;
         while (check){
         System.out.println("Welcome to Furama resort");
@@ -21,7 +19,11 @@ public class DisplayMainMenu {
         System.out.println("5. Promotion Management");
         System.out.println("6. Exit");
         Scanner sc =new Scanner(System.in);
-        number = sc.nextInt();
+        try {
+            number = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+        }
             switch (number){
                 case 1: displayEmployeeMenu(); break;
                 case 2: displayCustomerMenu(); break;
@@ -37,13 +39,17 @@ public class DisplayMainMenu {
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         boolean check = true;
         while (check) {
-            int number;
+            int number=0;
             System.out.println("1. Display list employees");
             System.out.println("2. Add new employee");
             System.out.println("3. Edit employee");
             System.out.println("4. Return main menu");
             Scanner sc = new Scanner(System.in);
-            number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number) {
                 case 1: employeeService.display(); break;
                 case 2: employeeService.addNow(); break;
@@ -64,6 +70,11 @@ public class DisplayMainMenu {
             System.out.println("4. Return main menu");
             Scanner sc =new Scanner(System.in);
             number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number){
                 case 1: customerService.display(); break;
                 case 2: customerService.addNow(); break;
@@ -77,13 +88,17 @@ public class DisplayMainMenu {
         FacilityServiceImpl facilityService=new FacilityServiceImpl();
         boolean check = true;
         while (check) {
-            int number;
+            int number=0;
             System.out.println("1. Display list facility");
             System.out.println("2. Add new facility");
             System.out.println("3. Display list facility maintenance");
             System.out.println("4. Return main menu");
             Scanner sc = new Scanner(System.in);
-            number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number) {
                 case 1: facilityService.display();break;
                 case 2: addNewFacility();break;
@@ -95,13 +110,17 @@ public class DisplayMainMenu {
         FacilityServiceImpl facilityService = new FacilityServiceImpl();
         boolean check = true;
         while (check) {
-            int number;
+            int number=0;
             System.out.println("1. Add new Villa");
             System.out.println("2. Add new House");
             System.out.println("3. Add new Room");
             System.out.println("4. Back to menu");
             Scanner sc = new Scanner(System.in);
-            number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number) {
                 case 1:
                     facilityService.addNewVilla(); break;
@@ -116,10 +135,12 @@ public class DisplayMainMenu {
         }
 
 
-    public static  void displayBookingMenu() {
+    public static void displayBookingMenu() {
         boolean check = true;
+        BookingServiceImpl bookingService=new BookingServiceImpl();
+        ContractServiceImpl contractService=new ContractServiceImpl();
         while (check) {
-            int number;
+            int number=0;
             Scanner sc = new Scanner(System.in);
             System.out.println("1. Add new booking");
             System.out.println("2. Display list booking");
@@ -127,8 +148,16 @@ public class DisplayMainMenu {
             System.out.println("4. Display list contracts");
             System.out.println("5. Edit contracts");
             System.out.println("6. Return main menu");
-            number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number) {
+                case 1: bookingService.addNow();
+                case 2: bookingService.display();
+                case 3: contractService.addNow();
+                case 4: contractService.display();
                 case 6:
                     displayMainMenu();
                     break;
@@ -139,12 +168,16 @@ public class DisplayMainMenu {
     public static void displayPromotionMenu() {
         boolean check = true;
         while (check) {
-            int number;
+            int number=0;
             Scanner sc = new Scanner(System.in);
             System.out.println("1. Display list customers use service");
             System.out.println("2. Display list customers get voucher");
             System.out.println("3. Return main menu");
-            number = sc.nextInt();
+            try {
+                number = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Bạn đã nhập sai định dạng, vui lòng nhập lại");
+            }
             switch (number) {
                 case 3:
                     displayMainMenu();

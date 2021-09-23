@@ -1,7 +1,5 @@
 package models;
 
-import models.abstractClass.Facility;
-
 public class Booking {
     private int idBooking;
     private String startDate;

@@ -2,6 +2,7 @@ package services.impl;
 
 import models.Employee;
 import services.EmployeeService;
+import utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void display() {
+        employeeList= (List<Employee>) ReadAndWrite.read("D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\employee.csv");
         for (Employee employee: employeeList) {
             System.out.println(employee.toString());
         }
@@ -43,6 +45,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         double salary = Integer.parseInt(scanner.nextLine());
         Employee employee= new Employee(id, name, age, phoneNumber, CMND, email, sex, level, position, salary);
         employeeList.add(employee);
+        ReadAndWrite.write(employeeList,"D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\employee.csv");
     }
 
     @Override
@@ -70,6 +73,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         double salary = Double.parseDouble(scanner.nextLine());
         Employee employee= new Employee(id, name, age, phoneNumber, CMND, email, sex, level, position, salary);
         employeeList.set(index-1,employee);
+        ReadAndWrite.write(employeeList,"D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\employee.csv");
     }
 
     @Override
