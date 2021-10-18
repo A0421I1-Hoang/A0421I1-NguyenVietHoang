@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32bb60a3-8a5a-41cf-865d-270517153ba3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Module2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/controllers/DisplayMainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/controllers/DisplayMainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/BookingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/BookingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/ContractServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/ContractServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1zgOqWr8zaNiYdnJddq5xhlsuxO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32bb60a3-8a5a-41cf-865d-270517153ba3" name="Default Changelist" comment="" />
+      <created>1634566455082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634566455082</updated>
+      <workItem from="1634566456611" duration="301000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
