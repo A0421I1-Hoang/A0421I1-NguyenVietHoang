@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d4ae1bd-0cab-4247-bfab-79020f0e1017" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Module2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/controllers/DisplayMainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/controllers/DisplayMainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/BookingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/BookingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/ContractServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/ContractServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b7_thiet_ke_bo_cuc_trang_web/[Thực hành]Tạo menu dọc/[Thực hành]Tạo menu dọc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../b7_thiet_ke_bo_cuc_trang_web/[Thực hành]Tạo menu dọc/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="20AoMxqdHHDReR28GfYvYvzFseT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="server_time" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="server_time" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d4ae1bd-0cab-4247-bfab-79020f0e1017" name="Default Changelist" comment="" />
+      <created>1635496708218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635496708218</updated>
+      <workItem from="1635496715161" duration="405000" />
+      <workItem from="1635497213154" duration="76000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1220" y="280" key="FileChooserDialogImpl" timestamp="1635496967483">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1220" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1635496967483" />
+    <state x="685" y="135" key="new project wizard" timestamp="1635497293069">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="685" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1635497293069" />
+  </component>
+</project>

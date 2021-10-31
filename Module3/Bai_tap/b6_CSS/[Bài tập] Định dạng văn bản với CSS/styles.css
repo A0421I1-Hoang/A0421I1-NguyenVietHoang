@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+#para1{
+    text-indent: 10px;
+    text-align: left;
+    position: absolute;
+    font-size: large;
+    word-spacing: 1.5px;
+}
+
+#para3{
+    padding-top: 3rem;
+    text-indent: 10px;
+    text-align: left;
+    position: absolute;
+    font-size: large;
+}

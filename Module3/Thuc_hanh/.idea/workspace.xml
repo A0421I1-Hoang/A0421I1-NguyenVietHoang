@@ -12,6 +12,9 @@
       <change beforePath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/out/production/CaseStudy/services/impl/FacilityServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/src/CaseStudy/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/src/bai_tap/b19_StringAndRegex/ValidatePhoneNumber/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b7_thiet_ke_bo_cuc_trang_web/[Thực hành]Tạo menu dọc/[Thực hành]Tạo menu dọc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b7_thiet_ke_bo_cuc_trang_web/[Thực hành]Tạo menu dọc/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +43,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bai_tap" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0421I1_Nguyen_Viet_Hoang\Module3\Thuc_hanh\b7_thiet_ke_bo_cuc_trang_web\[Thực hành]Tạo menu dọc" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,11 +61,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634566455082</updated>
-      <workItem from="1634566456611" duration="301000" />
+      <workItem from="1634566456611" duration="415000" />
+      <workItem from="1635290867331" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1635291535129">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1635291535129" />
   </component>
 </project>
