@@ -10,10 +10,10 @@ import java.io.IOException;
 public class ShowCustomerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Customer[] customers = {
-                new Customer("toan dz", "ha noi", "12/12/1969"),
-                new Customer("toan dz ++", "new york", "13/12/1969"),
-                new Customer("toan dz--", "moon", "????"),
-                new Customer("dz toan", "???", "2000 BC")
+                new Customer("Hoang", "ha noi", "12/12/1969"),
+                new Customer("Huy", "new york", "13/12/1969"),
+                new Customer("Dat", "moon", "????"),
+                new Customer("Tuan", "???", "2000 BC")
         };
         request.setAttribute("customers", customers);
         RequestDispatcher rq = request.getRequestDispatcher("showCustomer.jsp");
