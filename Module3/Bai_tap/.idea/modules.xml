@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bai_tap.iml" filepath="$PROJECT_DIR$/.idea/Bai_tap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/b11_MVC_model/b11_MVC_model.iml" filepath="$PROJECT_DIR$/b11_MVC_model/b11_MVC_model.iml" />
     </modules>
   </component>
 </project>

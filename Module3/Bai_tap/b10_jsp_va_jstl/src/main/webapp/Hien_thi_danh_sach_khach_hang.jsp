@@ -12,7 +12,7 @@
   <title>ShowCustomer</title>
 </head>
 <body>
-<h1 align="center">Welcome ToanDz</h1>
+<h1 align="center">Welcome</h1>
 <div>
   <br>
   <ul class="list-group">
