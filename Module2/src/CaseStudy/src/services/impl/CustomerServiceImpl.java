@@ -69,7 +69,6 @@ public class CustomerServiceImpl implements CustomerService {
         Customer customer= new Customer(id, name, age, phoneNumber, CMND, email, sex, typeCustomer, address);
         customerList.set(index-1,customer);
         ReadAndWrite.write(customerList, "D:\\A0421I1_Nguyen_Viet_Hoang\\Module2\\src\\CaseStudy\\src\\data\\customer.csv");
-
     }
 
     @Override

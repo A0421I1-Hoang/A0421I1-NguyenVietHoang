@@ -1,0 +1,11 @@
+rootProject.name = 'Module4'
+include 'bai_tap'
+include 'thuc_hanh'
+include 'b1_introductionSpringMVC'
+include 'bai_tap:b1_introductionSptingMVC'
+findProject(':bai_tap:b1_introductionSptingMVC')?.name = 'b1_introductionSptingMVC'
+include 'bai_tap:b1_introductionSptingMVC:ungDungCuyenDoiTienTe'
+findProject(':bai_tap:b1_introductionSptingMVC:ungDungCuyenDoiTienTe')?.name = 'ungDungCuyenDoiTienTe'
+include 'bai_tap:b1_introductionSptingMVC:ungDungTuDien'
+findProject(':bai_tap:b1_introductionSptingMVC:ungDungTuDien')?.name = 'ungDungTuDien'
+

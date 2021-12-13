@@ -1,13 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Bai_tap/b10_jsp_va_jstl" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Module3/Bai_tap/b10_jsp_va_jstl" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Bai_tap/b11_MVC_model" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Module3/Bai_tap/b11_MVC_model" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Bai_tap/b9_tong_quan_ung_dung_web" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Module3/Bai_tap/b9_tong_quan_ung_dung_web" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Case_study/JSP_Servlet" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Module3/Case_study/JSP_Servlet" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Thuc_hanh/b11_MVC_model" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Module3/Thuc_hanh/b11_MVC_model" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Module3/Thuc_hanh/b12_JDBC_CRUD" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Module3/Thuc_hanh/b12_JDBC_CRUD" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
