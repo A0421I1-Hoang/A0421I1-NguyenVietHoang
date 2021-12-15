@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/bai_tap/b1_introductionSptingMVC/ungDungCuyenDoiTienTe" />
             <option value="$PROJECT_DIR$/bai_tap/b1_introductionSptingMVC/ungDungTuDien" />
             <option value="$PROJECT_DIR$/thuc_hanh" />
+            <option value="$PROJECT_DIR$/thuc_hanh/b2_SpringController" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

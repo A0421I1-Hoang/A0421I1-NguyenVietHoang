@@ -8,4 +8,6 @@ include 'bai_tap:b1_introductionSptingMVC:ungDungCuyenDoiTienTe'
 findProject(':bai_tap:b1_introductionSptingMVC:ungDungCuyenDoiTienTe')?.name = 'ungDungCuyenDoiTienTe'
 include 'bai_tap:b1_introductionSptingMVC:ungDungTuDien'
 findProject(':bai_tap:b1_introductionSptingMVC:ungDungTuDien')?.name = 'ungDungTuDien'
+include 'thuc_hanh:b2_SpringController'
+findProject(':thuc_hanh:b2_SpringController')?.name = 'b2_SpringController'
 
