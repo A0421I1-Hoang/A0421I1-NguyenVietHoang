@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit product type</title>
+</head>
+<body>
+<h1>Edit product type</h1>
+<p>
+  <a href="/productTypes">Product type list</a>
+</p>
+<th:block th:if="${message}">
+  <p th:text="${message}"></p>
+</th:block>
+<!--/*@thymesVar id="productType" type="com.codegym.baiThi.model.ProductType"*/-->
+<form th:action="@{/edit-product-type}" th:object="${productType}" method="post">
+  <input th:type="hidden" name="id" th:field="*{id}">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" th:field="*{name}"/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Update product type"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

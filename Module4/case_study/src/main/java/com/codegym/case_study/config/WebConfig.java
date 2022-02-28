@@ -1,7 +1,7 @@
 package com.codegym.case_study.config;
 
-import com.codegym.case_study.fomatter.ProvinceFormatter;
-import com.codegym.case_study.service.ProvinceService;
+import com.codegym.case_study.formatter.CustomerTypeFormatter;
+import com.codegym.case_study.service.ICustomerTypeService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -20,7 +20,6 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceService.class)));
+        registry.addFormatter(new CustomerTypeFormatter(applicationContext.getBean(ICustomerTypeService.class)));
     }
-
 }

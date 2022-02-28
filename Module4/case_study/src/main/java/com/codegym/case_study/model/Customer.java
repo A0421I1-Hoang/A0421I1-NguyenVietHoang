@@ -1,28 +1,55 @@
 package com.codegym.case_study.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Entity
 @Table(name = "customer")
 public class Customer implements Cloneable{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
 
+    @Column(name = "name", columnDefinition = "VARCHAR(45)")
+    @NotBlank(message = "wrong format")
     private String name;
+
+    @Column(name = "birthday")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date birthday;
+
+    @Column(name = "gender")
+    private Integer gender;
+
+    @Column(name = "IdCard")
+    @NotNull
+    private String idCard;
+
+    @Column(name = "email")
+    @NotBlank
     private String email;
+
+    @Column(name = "phoneNumber")
+    @NotBlank
     private String phoneNumber;
 
     @ManyToOne
-    @JoinColumn(name = "province_id")
-    private Province province;
+    @JoinColumn(name = "CustomerType_id")
+    private CustomerType customerType;
 
-    public Customer(long id, String name, String email, String phoneNumber, Province province) {
+    public Customer(long id, @NotBlank(message = "wrong format") String name, Date birthday, int gender, @NotNull String idCard, @NotBlank String email, @NotBlank String phoneNumber) {
         this.id = id;
         this.name = name;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.idCard = idCard;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.province= province;
     }
 
     public Customer() {
@@ -44,6 +71,30 @@ public class Customer implements Cloneable{
         this.name = name;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
+    public String getIdCard() {
+        return idCard;
+    }
+
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -60,22 +111,25 @@ public class Customer implements Cloneable{
         this.phoneNumber = phoneNumber;
     }
 
-    public Province getProvince() {
-        return province;
+    public CustomerType getCustomerType() {
+        return customerType;
     }
 
-    public void setProvince(Province province) {
-        this.province = province;
+    public void setCustomerType(CustomerType customerType) {
+        this.customerType = customerType;
     }
 
     @Override
-    public Customer clone(){
+    public Customer clone() {
         Customer customer = new Customer();
         customer.setId(id);
         customer.setName(name);
+        customer.setBirthday(birthday);
+        customer.setGender(gender);
+        customer.setIdCard(idCard);
         customer.setEmail(email);
         customer.setPhoneNumber(phoneNumber);
-        customer.setProvince(province);
+        customer.setCustomerType(customerType);
         return customer;
     }
 
@@ -84,9 +138,11 @@ public class Customer implements Cloneable{
         return "Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", gender=" + gender +
+                ", idCard='" + idCard + '\'' +
                 ", email='" + email + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", province='" + province +
                 '}';
     }
 }

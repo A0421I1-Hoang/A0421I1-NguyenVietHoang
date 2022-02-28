@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Provinces</title>
+</head>
+<body>
+<a href="/create-customerType">Create new customer type</a>
+<h1>Customer Type</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <!--/*@thymesVar id="customerType" type="com.codegym.case_study.model.CustomerType"*/-->
+    <th:block th:each="customerType : ${customerType}">
+        <tr>
+            <td th:text="${customerType.name}"></td>
+            <td><a th:href="@{/edit-customer-type/__${customerType.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-customer-type/__${customerType.id}__ }">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

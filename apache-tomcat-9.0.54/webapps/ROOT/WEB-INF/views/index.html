@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h1>List Users</h1>
+<p>
+<a th:href="@{/users/create}">Create new User</a>
+</p>
+<table id="customers">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody th:each="c : ${user}">
+        <td th:text="${c.id}"></td>
+        <td th:text="${c.name}"></td>
+        <td th:text="${c.email}"></td>
+        <td th:text="${c.password}"></td>
+        <td><a th:href="@{/users/{id}/view(id=${c.getId()})}">view</a></td>
+        <td><a th:href="@{/users/{id}/edit(id=${c.getId()})}">edit</a></td>
+        <td><a th:href="@{/users/{id}/delete(id=${c.getId()})}">delete</a></td>
+    </tbody>
+</table>
+<footer th:replace="/layout :: footer"></footer>
+<div class="notify">
+    <!--/*@thymesVar id="success" type="com.codegym.controller.CustomerController"*/-->
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+</body>
+</html>

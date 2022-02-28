@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit customer</title>
+</head>
+<body>
+<h1>Edit customer</h1>
+<p>
+  <a href="/customers">Customer list</a>
+</p>
+<th:block th:if="${message}">
+  <p th:text="${message}"></p>
+</th:block>
+<!--/*@thymesVar id="customer" type="com.codegym.case_study.model.Customer"*/-->
+<form th:action="@{/edit-customer}" th:object="${customer}" method="post">
+  <table>
+    <tr>
+      <td>ID:</td>
+      <td><input th:type="hidden" name="id" th:field="*{id}"></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" th:field="*{name}"/></td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td><input type="birthday" th:field="*{birthday}"/></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td><input type="number" th:field="*{gender}"/></td>
+    </tr>
+    <tr>
+      <td>IDCard:</td>
+      <td><input type="text" th:field="*{idCard}"/></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" th:field="*{email}"/></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="text" th:field="*{phoneNumber}"/></td>
+    </tr>
+    <tr>
+      <td>Customer Type:</td>
+      <td>
+        <select name="customerType">
+          <!--/*@thymesVar id="customerType" type="com.codegym.case_study.model.CustomerType"*/-->
+          <option th:each="p : ${customerType}"
+                  th:value="${customerType.id}"
+                  th:text="${customerType.name}"
+                  th:selected="(${customer.customerType}) and (${customerType.id} == *{customerType.id})"></option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Update customer"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

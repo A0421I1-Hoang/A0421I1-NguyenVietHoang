@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {
-    Iterable<Customer> findAllByNameContainsOrEmailContainsOrAddressContains(String name, String email, String address);
+    Iterable<Customer> findAllByNameContainingOrEmailContaining(String name, String email);
 
-    Page<Customer> findAllByNameContainsOrEmailContainsOrAddressContains(String name, String email, String address, Pageable pageInfo);
+    Page<Customer> findAllByNameContainingOrEmailContaining(String name, String email, Pageable pageInfo);
 }

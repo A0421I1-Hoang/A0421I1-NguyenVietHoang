@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Type List</title>
+</head>
+<body>
+<a href="/create-productTypes">Create new product type</a>
+<h1>Product Type List</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <!--/*@thymesVar id="productType" type="com.codegym.baiThi.model.ProductType"*/-->
+    <th:block th:each="p : ${productType}">
+        <tr>
+            <td th:text="${productType.name}"></td>
+            <td><a th:href="@{/edit-product-type/__${productType.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-product-type/__${productType.id}__ }">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
