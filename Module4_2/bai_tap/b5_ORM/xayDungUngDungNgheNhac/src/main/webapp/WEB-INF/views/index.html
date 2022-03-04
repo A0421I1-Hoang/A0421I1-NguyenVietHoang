@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h1>List Users</h1>
+<p>
+<a th:href="@{/musics/create}">Create new User</a>
+</p>
+<table id="customers">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Singer</th>
+        <th>Type</th>
+        <th>Link</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody th:each="m : ${music}">
+        <td th:text="${m.id}"></td>
+        <td th:text="${m.name}"></td>
+        <td th:text="${m.singer}"></td>
+        <td th:text="${m.type}"></td>
+        <td th:text="${m.link}"></td>
+        <td><a th:href="@{/musics/{id}/view(id=${m.getId()})}">view</a></td>
+        <td><a th:href="@{/musics/{id}/edit(id=${m.getId()})}">edit</a></td>
+        <td><a th:href="@{/musics/{id}/delete(id=${m.getId()})}">delete</a></td>
+    </tbody>
+</table>
+<footer th:replace="/layout :: footer"></footer>
+<div class="notify">
+    <!--/*@thymesVar id="success" type="com.codegym.controller.CustomerController"*/-->
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+</body>
+</html>
