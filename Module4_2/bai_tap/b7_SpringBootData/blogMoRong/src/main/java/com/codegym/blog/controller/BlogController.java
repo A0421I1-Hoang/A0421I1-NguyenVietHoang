@@ -10,13 +10,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,6 +28,11 @@ public class BlogController {
     private TypeBlogService typeBlogService;
 
     @GetMapping("")
+    public String home(){
+        return "home";
+    }
+
+    @GetMapping("/index")
     public ModelAndView showList(@PageableDefault(size = 5) Pageable pageable, @RequestParam("search") Optional<String> search, Model model){
         Page<Blog> blogs;
         if (search.isPresent()){
@@ -49,10 +53,16 @@ public class BlogController {
     }
 
     @PostMapping("save")
-    public String save(Blog blog, RedirectAttributes redirectAttributes){
-        blogService.save(blog);
-        redirectAttributes.addAttribute("success", "Create new blog success");
-        return "redirect:/";
+    public String save(@Valid @ModelAttribute Blog blog,BindingResult bindingResult, RedirectAttributes redirectAttributes,  Model model){
+        if (bindingResult.hasErrors()){
+            List<TypeBlog> typeBlogs = typeBlogService.findAll();
+            model.addAttribute("typeBlog", typeBlogs);
+            return "create";
+        } else {
+            blogService.save(blog);
+            redirectAttributes.addFlashAttribute("success", "Create new blog success");
+            return "redirect:/index";
+        }
     }
 
     @GetMapping("/{id}/view")
@@ -71,7 +81,7 @@ public class BlogController {
     public String delete(Long id, RedirectAttributes redirectAttributes){
         blogService.delete(id);
         redirectAttributes.addAttribute("success", "Delete blog success");
-        return "redirect:/";
+        return "redirect:/index";
     }
 
     @GetMapping("/{id}/edit")
@@ -86,6 +96,6 @@ public class BlogController {
     public String update(Blog blog, RedirectAttributes redirectAttributes){
         blogService.save(blog);
         redirectAttributes.addAttribute("success", "Edit blog success");
-        return "redirect:/";
+        return "redirect:/index";
     }
 }

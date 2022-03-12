@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+</style>
+<ul>
+    <li><a th:href="@{/index}">Blog</a></li>
+    <li>type blog</li>
+</ul>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

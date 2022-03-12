@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h1>Create New Blog</h1>
+<div class="control">
+<p>
+    <a th:href="@{/}">Back to users list</a>
+</p>
+</div>
+<div id="form">
+    <form th:action="@{/save}" th:object="${product}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <p class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="number" th:field="*{price}"/>
+        </div>
+        <div>
+            <p class="text-danger" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Name Error</p>
+        </div>
+<!--        <div>-->
+<!--            <label>Type</label>-->
+<!--            <select th:field="*{typeBlog}">-->
+<!--                <option th:each="type : ${typeBlog}" th:text="${type.name}" th:value="${type.id}"></option>-->
+<!--            </select>-->
+<!--        </div>-->
+        <div>
+            <label>Description</label>
+            <input type="text" th:field="*{description}"/>
+        </div>
+        <div>
+            <p class="text-danger" th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Name Error</p>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

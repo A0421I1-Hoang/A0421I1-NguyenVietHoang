@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+   <style>
+        .button a {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="control">
+<p>
+    <a th:href="@{/index}">Back to shop</a>
+</p>
+</div>
+<h1>Your Cart</h1>
+<form th:action="@{/shop}" th:object="${cart}" method="post" id="form">
+    <h3>Total Items: <span th:text="${cart.countItemQuantity()}"></span></h3>
+    <h3>Total Products: <span th:text="${cart.countProductQuantity()}"></span></h3>
+    <table border="1">
+        <tr>
+<!--            <th>Name</th>-->
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr th:each="product: ${cart.products}">
+            <td th:text="${product.getKey().name}"></td>
+            <td>
+                <span th:text="${product.getValue()}"></span>
+            </td>
+            <td th:text="${product.getKey().price}"></td>
+            <td><a id="decrease_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='minus')}" th:if="${product.getValue()>1}">-</a></td>
+            <td><a id="increase_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='add')}">+</a></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td th:text="${cart.countTotalPayment()}"></td>
+        </tr>
+    </table>
+</form>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

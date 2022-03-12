@@ -4,6 +4,12 @@
 </head>
 <body>
 <h1>List Blog</h1>
+<div class="notify">
+    <!--/*@thymesVar id="success" type="com.codegym.controller.CustomerController"*/-->
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
 <div class="control">
 <p>
 <a th:href="@{/create}">Create new Blog</a>
@@ -11,7 +17,7 @@
 </div>
 <form>
     Search by name:
-    <input name="search" type="text"/> <input type="submit" value="Search"/>
+    <input th:action="@{/list}" name="search" type="text"/> <input type="submit" value="Search"/>
 </form>
 <table id="blog">
     <thead>
@@ -41,11 +47,5 @@
 </div>
 
 <footer th:replace="/layout :: footer"></footer>
-<div class="notify">
-    <!--/*@thymesVar id="success" type="com.codegym.controller.CustomerController"*/-->
-    <div th:if="${success}">
-        <span th:text="${success}"></span>
-    </div>
-</div>
 </body>
 </html>

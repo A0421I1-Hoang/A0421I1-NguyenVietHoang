@@ -1,6 +1,8 @@
 package com.codegym.blog.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Blog {
@@ -10,11 +12,16 @@ public class Blog {
     private Long id;
 
     @Column(name = "name")
+    @NotEmpty
+    @Size(min = 5, max = 255)
     private String name;
 
+    @NotEmpty
+    @Size(min = 5, max = 255)
     @Column(name = "author")
     private String author;
 
+    @NotEmpty
     @Column(name = "context")
     private String context;
 
