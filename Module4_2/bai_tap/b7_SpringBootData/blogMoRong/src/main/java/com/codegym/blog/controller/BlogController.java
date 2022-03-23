@@ -32,6 +32,11 @@ public class BlogController {
         return "home";
     }
 
+    @GetMapping("listType")
+    public ModelAndView showTypeList(){
+        return new ModelAndView("listType", "TypeList", typeBlogService.findAll());
+    }
+
     @GetMapping("/index")
     public ModelAndView showList(@PageableDefault(size = 5) Pageable pageable, @RequestParam("search") Optional<String> search, Model model){
         Page<Blog> blogs;
@@ -53,7 +58,7 @@ public class BlogController {
     }
 
     @PostMapping("save")
-    public String save(@Valid @ModelAttribute Blog blog,BindingResult bindingResult, RedirectAttributes redirectAttributes,  Model model){
+    public String save(@Valid @ModelAttribute Blog blog, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model){
         if (bindingResult.hasErrors()){
             List<TypeBlog> typeBlogs = typeBlogService.findAll();
             model.addAttribute("typeBlog", typeBlogs);

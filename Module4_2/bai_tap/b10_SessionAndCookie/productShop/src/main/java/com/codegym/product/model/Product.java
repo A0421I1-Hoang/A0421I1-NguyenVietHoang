@@ -1,6 +1,7 @@
 package com.codegym.product.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class Product {

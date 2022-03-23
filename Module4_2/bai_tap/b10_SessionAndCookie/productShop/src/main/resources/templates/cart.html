@@ -37,8 +37,8 @@
                 <span th:text="${product.getValue()}"></span>
             </td>
             <td th:text="${product.getKey().price}"></td>
-            <td><a id="decrease_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='minus')}" th:if="${product.getValue()>1}">-</a></td>
-            <td><a id="increase_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='add')}">+</a></td>
+            <td><a id="decrease_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='minus')}" th:if="${product.getValue()>1}">Bớt</a></td>
+            <td><a id="increase_button" class="notify" th:href="@{/add/__${product.getKey().id}__(action='add')}">Thêm</a></td>
         </tr>
         <tr>
             <td>Total</td>

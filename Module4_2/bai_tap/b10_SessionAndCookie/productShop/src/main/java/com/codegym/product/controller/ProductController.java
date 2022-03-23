@@ -87,8 +87,6 @@ public class ProductController {
     @GetMapping("/{id}/edit")
     public String showEditForm(@PathVariable Long id, Model model){
         model.addAttribute("product", productService.findById(id));
-//        List<TypeBlog> typeBlogs = typeBlogService.findAll();
-//        model.addAttribute("typeBlog", typeBlogs);
         return "edit";
     }
 
