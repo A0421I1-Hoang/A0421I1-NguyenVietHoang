@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<div class="header" style="display: flex;background: #0A2550">
+    <h1>Create new blog</h1>
+    <label style="margin-right: 30px; line-height: 81px;color: white" sec:authorize="isAuthenticated()">[[${#request.userPrincipal.principal.username}]]</label>
+</div>
+<div class="control">
+<p>
+    <a th:href="@{/user/index}">Back to blog list</a>
+</p>
+</div>
+<aside class="d-flex justify-content-center align-items-center">
+    <article class="col-md-4">
+<div id="form">
+    <form th:action="@{/user/save}" th:object="${blog}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" class="form-control" th:field="*{id}"/>
+        <div  style="margin: 0 0 10px 0;  font-size: 25px">
+            <label>Nick name: </label>
+            <input th:field="*{user.nickName}" readonly>
+        </div>
+<!--        <div>-->
+<!--            <p class="text-danger" th:if="${#fields.hasErrors('nickName')}" th:errors="*{nickName}">Name Error</p>-->
+<!--        </div>-->
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <p class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
+        </div>
+        <div style="margin: 12px 0 12px 0">
+            <label>Type</label>
+            <select th:field="*{typeBlog}">
+                <option th:each="type : ${typeBlog}" th:text="${type.name}" th:value="${type.id}"></option>
+            </select>
+        </div>
+        <div class="content">
+            <label>Context</label>
+            <input type="text" th:field="*{context}" class="form-control"/>
+        </div>
+        <div>
+            <p class="text-danger" th:if="${#fields.hasErrors('context')}" th:errors="*{context}">Name Error</p>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save"/>
+    </form>
+</div>
+    </article>
+
+</aside>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

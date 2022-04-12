@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<div class="header" style="display: flex;background: #0A2550">
+<h1>Blog</h1>
+    <a style="margin-right: 30px; line-height: 81px;color: white" sec:authorize="isAuthenticated()">[[${#request.userPrincipal.principal.username}]]</a>
+    <a style="margin-right: 30px; line-height: 81px;color: white" sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout</a>
+</div>
+<div class="notify">
+    <!--/*@thymesVar id="success" type="com.codegym.controller.CustomerController"*/-->
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<div class="control">
+<p>
+<a th:href="@{/user/create}">Create new Blog</a>
+</p>
+</div>
+<div class="control">
+    <p>
+        <a th:href="@{/admin/listType}">Type Blog</a>
+    </p>
+</div>
+<form style="margin-left: 10px; margin-right: 10px">
+    Search by name:
+    <input th:action="@{/list}" name="search" type="text"/>
+    <input type="submit" value="Search"/>
+</form >
+<table id="blog" style="text-align-last: center; margin-left: 10px; width: 99%">
+    <thead>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Nick Name</th>
+        <th>Type</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody th:each="b, iter : ${blog}">
+        <td th:text="${iter.count}"></td>
+        <td th:text="${b.name}"></td>
+        <td th:text="${b.user.nickName}"></td>
+        <td th:text="${b.typeBlog.name}"></td>
+        <td><a th:href="@{/user/{id}/view(id=${b.getId()})}">view</a></td>
+        <td><a th:href="@{/user/{id}/edit(id=${b.getId()})}">edit</a></td>
+        <td><a th:href="@{/user/{id}/delete(id=${b.getId()})}">delete</a></td>
+    </tbody>
+</table>
+
+<div class="page" style="text-align-last: center">
+    <a th:href="@{'/index/'(page=${blog.number - 1}, search=${search})}" th:if="${blog.hasPrevious()}" >Previous</a>
+    <span th:text="${blog.number + 1}"></span>/<span th:text="${blog.totalPages}"></span>
+    <a th:href="@{'/index/'(page=${blog.number + 1}, search=${search})}" th:if="${blog.hasNext()}">Next</a>
+</div>
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

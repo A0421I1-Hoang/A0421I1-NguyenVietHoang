@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<div class="header" style="display: flex;background: #0A2550">
+    <h1>Edit type blog</h1>
+    <label style="margin-right: 30px; line-height: 81px;color: white" sec:authorize="isAuthenticated()">[[${#request.userPrincipal.principal.username}]]</label>
+</div>
+<div class="control">
+<p>
+    <a th:href="@{/admin/listType}">Back to users list</a>
+</p>
+</div>
+<div id="form">
+    <form th:action="@{/admin/update}" th:object="${typeBlog}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}" readonly/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}" readonly/>
+        </div>
+        <input type="submit" value="Edit"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

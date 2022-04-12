@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background: #0A2550;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.header{
+    width: 100%;
+    height: 78px;
+    display: flex;
+}
+.logo{
+    width: 1094px;
+    height: 100%;
+}
+.logo p{
+    width: 100px;
+    height: 60px;
+    padding: 8px 20px;
+    font-weight: 800;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 60px;
+    padding-bottom: 5px;
+    font-style: oblique;
+    letter-spacing: 3px;
+}
+.form{
+    margin-left: 475px;
+    display: flex;
+    line-height: 80px;
+}
+.form-register{
+    padding-left: 30px;
+}
+
+.form-login{
+    padding-left: 30px;
+}
+
+.form a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+.form a:hover{
+    color: red;
+}
+.background img{
+    width: 100%;
+    /*height: 500px;*/
+}
+.title p {
+    z-index: 2;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    position: absolute;
+    right: 23%;
+    top: 35%;
+    font-size: 90px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.title a {
+    background: black;
+    color: #FAFAFA;
+    cursor: pointer;
+    border-radius: 52px;
+    box-shadow: none;
+    border: none;
+    width: 234px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 55%;
+    left: 43%;
+    margin-left: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.title a:hover{
+    background: #F2F2F2;
+    color: rgb(202, 50, 50);
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height:80px;
+    background: #0F262A;
+}
+.email{
+    color: #FAFAFA;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 22px;
+    font-weight: bold;
+}
+
+#container {
+    height:100%;
+}

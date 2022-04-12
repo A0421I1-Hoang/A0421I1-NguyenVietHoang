@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<div class="header" style="display: flex;background: #0A2550">
+    <h1>Delete blog</h1>
+    <label style="margin-right: 30px; line-height: 81px;color: white" sec:authorize="isAuthenticated()">[[${#request.userPrincipal.principal.username}]]</label>
+</div>
+<div class="control">
+<p>
+    <a th:href="@{/user/index}">Back to blog list</a>
+</p>
+</div>
+<div id="form">
+    <form th:action="@{/user/delete}" th:object="${blog}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}" readonly/>
+        <div  style="margin: 0 0 10px 0;  font-size: 25px">
+            <label>Nick name: </label>
+            <span th:field="*{user.nickName}"></span>
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}" readonly/>
+        </div>
+        <div>
+            <label>Type</label>
+            <input type="text" th:field="*{typeBlog.name}" readonly/>
+        </div>
+        <div>
+            <label>Context</label>
+            <input type="text" th:field="*{context}" readonly/>
+        </div>
+        <input type="submit" value="Delete"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
