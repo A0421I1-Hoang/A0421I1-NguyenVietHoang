@@ -35,7 +35,7 @@ public class Customer {
     @Column(name = "customer_phone_number")
     @NotBlank(message = "Không được để trống và không có dấu cách")
 //    @Size(min = 8, max = 9, message = "SĐT chỉ có thể có 9 hoặc 10 số")
-    @Pattern(regexp = "/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/", message = "Sai định dạng số điện thoại")
+//    @Pattern(regexp = "/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/", message = "Sai định dạng số điện thoại")
     private String phoneNumber;
 
     @Column(name = "customer_email")
