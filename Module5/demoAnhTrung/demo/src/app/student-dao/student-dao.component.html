@@ -1,0 +1,26 @@
+<h1>Student detail</h1>
+<table class="table">
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Mark</th>
+    <th>Pass/Fail</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>ID student: {{student.id}}</td>
+      <td>Student name: {{student.name}}</td>
+      <td>Student age: {{student.age}}</td>
+      <td>Student mark: {{student.mark}}</td>
+      <td class="text-success" *ngIf="student.mark >= 5">Pass</td>
+      <td class="text-danger" *ngIf="student.mark < 5">Fail</td>
+      <td>
+        <a class="btn btn-info m-2">Detail</a>
+        <a class="btn btn-warning m-2">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<app-student-detail></app-student-detail>

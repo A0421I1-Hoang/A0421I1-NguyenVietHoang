@@ -7,7 +7,7 @@ import {IStudent} from '../../model/student';
 })
 
 export class StudentDetailComponent implements OnInit{
-  student: IStudent = {
+  students: IStudent = {
     id: 1,
     name: 'Việt Hoàng',
     age: 23,

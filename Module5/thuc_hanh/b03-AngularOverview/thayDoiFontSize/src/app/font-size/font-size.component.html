@@ -1,0 +1,24 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input #element type="range" min="9" max="72" value="18" (change)="changeFontSizeValue(element.value)">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+  This is a paragraph.
+</p>
+Cách 2: Sử dụng Two Way Binding để tự thay đổi:
+
+Bước 6: Để sử dụng Two way Binding thêm [(ngModel)] vào trong thẻ input:
+
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input type="range" min="9" max="72" value="18" [(ngModel)]="fontSize">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+  This is a paragraph.
+</p>
