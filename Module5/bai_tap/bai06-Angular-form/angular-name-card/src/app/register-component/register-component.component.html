@@ -1,0 +1,50 @@
+<h1>Form đăng kí</h1>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit(user)" class="form form-control-lg">
+
+<div class="form-control">
+  <label for="email">Email </label>
+  <input type="text" id="email" name="email" formControlName="email">
+</div>
+
+<div class="form-control">
+  <label for="password">Password </label>
+  <input type="password" id="password" name="password" formControlName="password">
+</div>
+
+<div class="form-control">
+  <label for="confirmPassword">Confirm Password </label>
+  <input type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword">
+</div>
+
+<div class="form-control">
+  <label for="country">Country </label>
+  <input type="text" id="country" name="country" formControlName="country">
+<!--  <select id="country" name="country">-->
+<!--    <option [ngValue]="c.id" *ngFor="let c of countryList">-->
+
+<!--    </option>-->
+<!--  </select>-->
+</div>
+
+<div class="form-control">
+  <label for="age">Age </label>
+  <input type="text" id="age" name="age" formControlName="age">
+</div>
+
+  <div class="form-control">
+    <label for="gender">Gender </label>
+    <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
+    <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female
+  </div>
+
+  <div class="form-control">
+    <label for="phone">Phone:  </label>
+    <input type="text" id="phone" name="phone" formControlName="phone">
+  </div>
+
+<div>
+  <button type="submit">Submit</button>
+</div>
+
+</form>
