@@ -1,0 +1,18 @@
+
+<h1>Dictionary Page: English - Vietnamese </h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>English Word</th>
+    <th>Translate</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let word of list; index as i" >
+    <td>{{i+1}}</td>
+    <td>{{word.word}}</td>
+    <td><a [routerLink]="['translate', word.word]">Detail</a></td>
+  </tr>
+  </tbody>
+</table>
