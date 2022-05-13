@@ -7,12 +7,14 @@ import { ListComponent } from './todo/list/list.component';
 import { EditComponent } from './todo/edit/edit.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { CreateComponent } from './todo/create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    EditComponent
+    EditComponent,
+    CreateComponent
   ],
     imports: [
         BrowserModule,

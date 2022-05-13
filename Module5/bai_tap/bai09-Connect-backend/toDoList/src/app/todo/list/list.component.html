@@ -1,9 +1,9 @@
-
 <h2 class="text-center">
   Todo App with HttpClient
 </h2>
 <div class="col-md-8 offset-md-2">
   <input type="text" class="form-control" [formControl]="content" (change)="change()">
+  <a class="btn btn-success" (click)="createToDo(todo)">Create</a>
   <ul>
     <li (click)="toggleTodo(i)"
         [class.complete]="todo.complete"

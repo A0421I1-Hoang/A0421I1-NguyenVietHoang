@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Todo} from '../../todo';
-import {FormControl} from '@angular/forms';
+import {FormControl, FormGroup} from '@angular/forms';
 import {TodoService} from '../../service/todo.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -12,7 +13,11 @@ export class ListComponent implements OnInit {
 
   todos: Todo[] = [];
   content = new FormControl();
-  constructor(private todoService: TodoService) { }
+  todo = new FormGroup({
+    content: new FormControl(),
+    complete: new FormControl(),
+  });
+  constructor(private todoService: TodoService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.todoService.getAll().subscribe(
@@ -62,5 +67,14 @@ export class ListComponent implements OnInit {
     // this.todoService.editTodo(id, this.todos).subscribe();
   }
 
+  createToDo(todo: any) {
+    this.todoService.createTodo(todo).subscribe(
+      () => {},
+      () => {},
+      () => {
+        this.router.navigateByUrl('/');
+        },
+    );
+  }
 }
 
