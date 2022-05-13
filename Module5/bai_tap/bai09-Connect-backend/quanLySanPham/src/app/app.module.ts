@@ -7,6 +7,11 @@ import { ProductCreateComponent } from './product/product-create/product-create.
 import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { ListComponent } from './category/list/list.component';
+import { DeleteComponent } from './category/delete/delete.component';
+import { EditComponent } from './category/edit/edit.component';
+import { CreateComponent } from './category/create/create.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +19,17 @@ import { ProductListComponent } from './product/product-list/product-list.compon
     ProductCreateComponent,
     ProductDeleteComponent,
     ProductEditComponent,
-    ProductListComponent
+    ProductListComponent,
+    ListComponent,
+    DeleteComponent,
+    EditComponent,
+    CreateComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
