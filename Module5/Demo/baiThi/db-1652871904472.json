@@ -1,0 +1,48 @@
+{
+  "benh_an": [
+    {
+      "id": 1,
+      "ma_benh_an": "BA-001",
+      "ma_benh_nhan": "BN-435",
+      "ten_benh_nhan": "Nguyễn Văn A",
+      "ngay_nhap_vien": "07-08-2016",
+      "ngay_ra_vien": "08-08-2019",
+      "ly_do": "Ung thư gan giai đoạn cuối",
+      "phuong_phap": "Mổ",
+      "bac_si_dieu_tri": "Lê Văn B"
+    },
+    {
+      "id": 2,
+      "ma_benh_an": "BA-112",
+      "ma_benh_nhan": "BN-123",
+      "ten_benh_nhan": "Nguyễn Văn C",
+      "ngay_nhap_vien": "10-08-2019",
+      "ngay_ra_vien": "10-02-2020",
+      "ly_do": "Suy thận mạn",
+      "phuong_phap": "Chạy thận",
+      "bac_si_dieu_tri": "Nguyên Đôn D"
+    },
+    {
+      "id": 3,
+      "ma_benh_an": "BA-223",
+      "ma_benh_nhan": "BN-984",
+      "ten_benh_nhan": "Tôn Nữ D",
+      "ngay_nhap_vien": "11-01-2020",
+      "ngay_ra_vien": "08-08-2020",
+      "ly_do": "Covid-2019",
+      "phuong_phap": "Cách ly và theo dõi thường xuyên",
+      "bac_si_dieu_tri": "La Văn N"
+    },
+    {
+      "id": 4,
+      "ma_benh_an": "BA-444",
+      "ma_benh_nhan": "BN-153",
+      "ten_benh_nhan": "Đoàn Thị E",
+      "ngay_nhap_vien": "07-08-2019",
+      "ngay_ra_vien": "08-08-2018",
+      "ly_do": "Ung thư phổi giai đoạn cuối",
+      "phuong_phap": "Xạ trị",
+      "bac_si_dieu_tri": "Lê Văn B"
+    }
+  ]
+}

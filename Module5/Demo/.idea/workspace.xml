@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56a5f535-230a-4bea-96fc-541a6104de07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/baiThi/node_modules/@babel/generator/lib/generators/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/baiThi/node_modules/@babel/generator/lib/generators/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baiThi/node_modules/@babel/runtime/helpers/asyncIterator.js" beforeDir="false" afterPath="$PROJECT_DIR$/baiThi/node_modules/@babel/runtime/helpers/asyncIterator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baiThi/node_modules/@babel/runtime/helpers/temporalUndefined.js" beforeDir="false" afterPath="$PROJECT_DIR$/baiThi/node_modules/@babel/runtime/helpers/temporalUndefined.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="29YjJHUo1XhgEc1vn6j7i2Mxbk4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56a5f535-230a-4bea-96fc-541a6104de07" name="Default Changelist" comment="" />
+      <created>1653296840307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653296840307</updated>
+      <workItem from="1653296861252" duration="209000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="257" key="FileChooserDialogImpl" timestamp="1653297105634">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="739" y="257" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1653297105634" />
+    <state x="342" y="177" key="new project wizard" timestamp="1653297107821">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="342" y="177" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1653297107821" />
+  </component>
+</project>

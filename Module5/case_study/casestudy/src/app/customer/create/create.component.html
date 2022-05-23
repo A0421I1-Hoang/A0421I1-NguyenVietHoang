@@ -1,0 +1,97 @@
+<div class="row align-items-center mt-3">
+  <div class="col-2"></div>
+  <div class="col-8 card border-warning">
+    <form (submit)="createCustomer()" [formGroup]="formCreateCustomer">
+      <div class="form-group mt-2">
+        <label for="exampleFormControlInput1">ID</label>
+        <input formControlName="id" type="text" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Họ Tên Khách Hàng</label>
+        <input formControlName="nameCustomer" type="text" class="form-control">
+<!--        <p class="error" *ngIf="(editForm.get('nameCustomer').hasError('pattern') && editForm.get('nameCustomer').dirty)-->
+<!--          || (editForm.get('nameCustomer').hasError('required') && editForm.get('nameCustomer').touched)">-->
+<!--          Tên Khách Hàng Không Được Để Trống, Không Chứa Số Và Ký Tự Đặc Biệt-->
+<!--        </p>-->
+      </div>
+      <div class="form-group mt-2">
+        <label for="exampleFormControlInput1">Mã Khách Hàng</label>
+        <input formControlName="customerCode" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Ngày sinh</label>
+        <input formControlName="birthDate" type="date" class="form-control">
+<!--        <p class="error"-->
+<!--           *ngIf="(editForm.get('birthDate').hasError('required') && editForm.get('birthDate').touched)">-->
+<!--          Ngày sinh Không Được Để Trống-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Giới tính: </label><br>
+        <input formControlName="gender" type="radio" value="1"> Nam
+        <input formControlName="gender" type="radio" value="2"> Nữ
+<!--        <p class="error"-->
+<!--           *ngIf="(editForm.get('gender').hasError('required') && editForm.get('gender').touched)">-->
+<!--          Hãy chọn giới tính-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input formControlName="email" type="text" class="form-control">
+<!--        <p class="error" *ngIf="(editForm.get('email').hasError('pattern') && editForm.get('email').dirty)-->
+<!--          || (editForm.get('email').hasError('required') && editForm.get('email').touched)">-->
+<!--          Email Không Được Để Trống Và Phải Theo Định Dạng: abc@def.com-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Số Điện Thoại</label>
+        <input formControlName="numberPhone" type="text" class="form-control">
+<!--        <p class="error" *ngIf="(editForm.get('numberPhone').hasError('pattern') && editForm.get('numberPhone').dirty)-->
+<!--          || (editForm.get('numberPhone').hasError('required') && editForm.get('numberPhone').touched)">-->
+<!--          Sô Điện Thoại Không Được Để Trống Và Phải Chứa 10 - 12 Số.-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">CMND</label>
+        <input formControlName="idCard" type="text" class="form-control">
+<!--        <p class="error" *ngIf="(editForm.get('idCard').hasError('pattern') && editForm.get('idCard').dirty)-->
+<!--                  || (editForm.get('idCard').hasError('required') && editForm.get('idCard').touched)">-->
+<!--          Nhập sai CMND-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Địa chỉ</label>
+        <input formControlName="address" type="text" class="form-control">
+<!--        <p class="error"-->
+<!--           *ngIf="(editForm.get('address').hasError('required') && editForm.get('address').touched)">-->
+<!--          Tên Nhóm Không Được Để Trống-->
+<!--        </p>-->
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Loại Khách hàng</label>
+        <select formControlName="customerType" class="form-control" id="exampleFormControlSelect1">
+          <ng-container *ngFor="let t of customerType, index as i">
+            <option [ngValue]="t" >{{t.customerTypeName}}</option>
+          </ng-container>
+        </select>
+<!--        <p class="error"-->
+<!--           *ngIf="(editForm.get('customerType').hasError('required') && editForm.get('customerType').touched)">-->
+<!--          Chọn Loại Khách Hàng-->
+<!--        </p>-->
+      </div>
+      <div class="text-center m-3">
+        <button type="submit" class="btn btn-primary">
+          <i class="fa fa-paper-plane"></i>
+          <span class="ml-1">Thêm mới</span>
+        </button>
+        <button class="btn btn-danger mr-5">
+          <a id="huy" [routerLink]="'/list'">
+            <i class="fa fa-paper-plane"></i>
+            Huỷ</a>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="col-2"></div>
+

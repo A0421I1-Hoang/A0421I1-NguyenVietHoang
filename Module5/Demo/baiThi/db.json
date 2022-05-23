@@ -1,0 +1,37 @@
+{
+  "benh_an": [
+    {
+      "id": 1,
+      "ma_benh_an": "BA-001",
+      "ma_benh_nhan": "BN-435",
+      "ten_benh_nhan": "Nguyễn Văn A",
+      "ngay_nhap_vien": "2016-08-07",
+      "ngay_ra_vien": "2019-08-08",
+      "ly_do": "Ung thư gan giai đoạn cuối",
+      "phuong_phap": "Mổ",
+      "bac_si_dieu_tri": "Đoàn Phước Trung"
+    },
+    {
+      "id": 2,
+      "ma_benh_an": "BA-112",
+      "ma_benh_nhan": "BN-123",
+      "ten_benh_nhan": "Lê Vắn yyyy",
+      "ngay_nhap_vien": "2019-07-31",
+      "ngay_ra_vien": "2020-08-14",
+      "ly_do": "Viêm Phổi",
+      "phuong_phap": "Khám sơ",
+      "bac_si_dieu_tri": "Nguyên Đôn D"
+    },
+    {
+      "id": 3,
+      "ma_benh_an": "BA-223",
+      "ma_benh_nhan": "BN-984",
+      "ten_benh_nhan": "Tôn Nữ D",
+      "ngay_nhap_vien": "2020-01-11",
+      "ngay_ra_vien": "2020-08-08",
+      "ly_do": "Covid-2019",
+      "phuong_phap": "Cách ly và theo dõi thường xuyên",
+      "bac_si_dieu_tri": "La Văn N"
+    }
+  ]
+}
